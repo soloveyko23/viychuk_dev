@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240726011805">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?_v=20240726011805"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__body flex items-start">
+					<a href="#" class="header__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="102" height="96" viewBox="0 0 102 96" fill="none">
+							<path d="M14.2536 77.2504H14.04L8.32791 93.314L2.10871 77.2504H0L7.20689 95.8671H9.3156L8.43462 93.5799L14.2536 77.2504Z" fill="#D4769A" />
+							<path d="M16.1142 77.2504V95.8671H18.2229V77.2504H16.1142Z" fill="#D4769A" />
+							<path d="M34.4577 77.2504H34.2441L28.5853 89.2715L22.2059 77.2504H20.0972L26.6101 89.4311V95.8671H28.7188V89.4311L34.4577 77.2504Z" fill="#D4769A" />
+							<path d="M52.5704 90.4948C51.2091 93.181 49.127 94.7234 46.7514 95.0959C42.0537 95.7873 38.1832 93.3671 36.7418 88.6598C35.3273 83.9789 36.9821 78.6068 41.5199 77.6227C45.0431 76.8514 48.9937 78.8194 50.9954 82.2238V79.0588C50.2482 78.4206 47.1785 76.9845 44.2425 76.9845C38.9841 76.9845 34.1794 81.2397 34.1794 86.5055C34.1794 91.7448 38.7438 96 44.0288 96C48.7534 96 51.3158 93.5799 52.7572 90.6013L52.5704 90.4948Z" fill="#D4769A" />
+							<path d="M66.2989 77.2504V84.7501H57.0099V77.2504H54.9012V95.8671H57.0099V84.9365H66.2989V95.8671H68.4076V77.2504H66.2989Z" fill="#D4769A" />
+							<path d="M85.1429 77.2504V89.5907C85.1429 92.5958 83.1409 95.4416 79.8579 95.7075C75.9875 96.0267 73.7186 93.3671 73.7186 88.9788V77.2504H71.6099V88.9788C71.6099 93.8193 74.9465 96 78.9237 96C82.6872 96 85.3297 93.314 85.3297 89.5907V77.2504H85.1429Z" fill="#D4769A" />
+							<path d="M99.9513 95.8671H102.194L95.0934 83.4471L100.912 77.4631H100.619L90.6359 87.7555V77.2504H88.5272V95.8671H90.6359V88.0214L93.652 84.9097L99.9513 95.8671Z" fill="#D4769A" />
+							<path d="M81.6657 71.9823C81.6657 71.9823 78.2559 74.3132 78.7763 75.029C79.0461 75.3999 82.5677 73.1858 82.5677 73.1858C82.6646 73.0841 82.7787 72.7714 82.4608 72.3327C82.1427 71.8941 81.7982 71.9164 81.6657 71.9823Z" fill="#D4769A" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M50.8753 0.000414665C51.6961 -0.0216303 53.697 0.796374 55.1359 4.24479C56.8375 8.32215 57.1198 11.4283 57.2153 12.4796C57.2207 12.5397 57.2256 12.5931 57.2301 12.6396C57.3128 13.4988 57.9853 22.7229 54.1623 30.6303C53.8755 31.1492 53.1941 32.3411 52.7623 32.959C52.2227 33.7313 52.2455 34.7687 52.9525 35.7C53.5178 36.4451 54.039 36.9999 54.2292 37.1843C56.8001 39.6774 60.1773 41.7415 63.6157 42.2711C64.1251 41.8628 65.4562 40.5267 66.7054 38.4479C68.2667 35.8496 70.2434 32.5725 75.1436 29.3948C76.0351 28.7825 78.3031 27.6967 80.2431 28.2528C81.2731 28.7328 82.9912 30.458 82.2198 33.3007C81.1733 37.1569 73.5543 42.0754 69.2843 42.7158C66.6398 43.1126 65.8808 43.0415 65.4399 43.3807C65.1036 43.6397 64.9526 44.1375 64.2909 45.2642C63.0992 47.2933 62.9882 53.3536 62.9882 56.3467L62.9844 56.449C62.9318 57.8929 62.8171 61.0432 62.4643 61.9698C62.1459 61.8642 61.2502 60.905 60.0636 59.2839C58.5383 57.1999 55.3104 56.7062 53.4831 56.7368C51.6556 56.7675 48.0451 57.0586 45.4675 59.157C45.1105 59.5763 44.34 60.4779 44.1156 60.7296C44.0765 60.7735 44.0344 60.8228 43.989 60.876C43.7107 61.2026 43.3078 61.6754 42.6503 61.9698C42.351 61.2407 41.738 59.5834 41.6537 58.8287C41.3814 57.5925 41.0481 55.8382 40.7071 54.0434C40.2353 51.561 39.7487 49.0007 39.3886 47.6252C38.8579 45.5988 38.3333 44.7349 37.9872 44.1649C37.9192 44.0528 37.8579 43.952 37.8051 43.856C36.3315 43.8194 32.9269 43.6105 31.0969 43.0671C28.8097 42.3877 24.4768 39.8239 22.5853 37.6983C22.4439 37.5391 22.3061 37.3862 22.1728 37.238C20.522 35.4033 19.5138 34.283 19.8802 31.3432C20.241 28.4472 22.5014 28.955 23.299 29.1342C23.3766 29.1516 23.4403 29.1659 23.4871 29.1737C24.0151 29.2613 28.6555 30.6419 34.066 35.7258C35.0718 36.6961 37.5083 39.319 39.2092 42.0491C40.5429 41.7152 43.5787 40.8479 44.9527 40.0047C45.2608 39.8156 45.5655 39.6518 45.8749 39.4855C47.2901 38.7245 48.8022 37.9116 51.1764 34.3911C50.21 32.0506 48.4295 26.8615 48.2771 24.8576C48.2386 24.3514 48.131 23.6609 47.9981 22.8062C47.4371 19.2033 46.423 12.6889 48.2243 4.83452C48.499 3.28413 49.4561 0.1488 50.8753 0.000414665ZM50.9435 0.833375C51.8968 1.77473 53.9596 4.61722 54.5842 8.4561C55.3648 13.2547 55.512 16.7765 55.0261 20.6067C54.9813 20.9593 54.9384 21.3115 54.8956 21.6641C54.4728 25.1416 54.0419 28.6846 51.6545 33.5474C51.2093 31.9185 50.3129 28.4586 50.2898 27.6495C50.2807 27.3372 50.2089 26.8845 50.1048 26.2285C49.82 24.435 49.2939 21.1211 49.1514 14.9962C49.0272 9.65044 49.5286 5.99749 50.1093 4.09351C50.3243 3.10503 50.7921 1.06909 50.9435 0.833375ZM21.5448 31.05C21.8876 30.8985 22.831 30.5855 24.2549 30.974C26.0347 31.4595 28.1493 32.6295 31.1081 35.0458C34.0669 37.4618 35.9579 40.2548 37.2814 42.4492C36.3213 42.4786 34.0103 42.3351 32.3649 41.7509C30.4953 41.0871 29.817 40.787 26.454 38.5228C22.49 35.854 20.8958 33.5084 21.5448 31.05ZM77.8369 30.1598C79.1463 29.8996 80.6277 30.2393 80.9771 30.4313C80.8228 32.4126 80.0881 34.8614 76.24 38.151C75.5436 38.7462 72.5114 41.0322 70.572 41.3285C70.3899 41.3563 70.2058 41.384 70.0197 41.4121L70.0172 41.4123L70.0139 41.413C68.6224 41.622 67.1208 41.8478 65.5839 42.2557C66.9076 40.0613 69.3154 36.773 71.9268 33.9874C74.998 30.711 76.1845 30.4807 77.6192 30.2023L77.6203 30.2021C77.6543 30.1954 77.6886 30.189 77.723 30.1821C77.7608 30.1747 77.7986 30.1674 77.8369 30.1598ZM43.1613 41.9339C45.6753 40.6765 48.3679 39.3297 49.3677 38.0806C49.933 37.5238 51.148 36.1117 51.4854 34.9178C52.3203 36.0771 54.4695 38.7083 56.3894 39.9596C58.7891 41.5235 59.9922 42.1755 63.3513 42.8591C63.079 44.082 62.5039 46.6081 62.3828 46.9298C62.2618 47.2514 61.9423 49.0003 61.7978 49.8344C61.5057 51.4758 61.0204 55.3274 61.4182 57.6016C61.2379 57.777 60.7374 58.0755 60.1777 57.8649C59.7614 57.7084 59.3853 57.4226 59.0775 57.1886C58.8676 57.0292 58.6891 56.8935 58.5515 56.8395C58.2119 56.7062 56.1844 55.9472 53.354 55.9575C50.5238 55.9678 47.8069 56.6242 46.1601 57.2907C44.5134 57.9571 43.9789 58.5851 43.1212 59.5964C42.968 57.3613 42.5653 52.5513 42.1787 51.1934C42.0201 50.6366 41.9409 50.2198 41.8443 49.712C41.6465 48.6724 41.3765 47.2521 40.2045 43.4694C41.0633 42.9831 42.0964 42.4664 43.1613 41.9339Z" fill="#D4769A" />
+						</svg>
+					</a>
+					<div class="header__content">
+						<div class="header__top top-header">
+							<div class="lg:!flex hidden items-center gap-5 lg:flex-nowrap flex-wrap">
+								<div class="flex items-center gap-6">
+									<div class="dropdown dropdown-sm dropdown--gray" data-dropdown>
+										<button class="dropdown-toggle _icon-arrow-bottom" type="button" data-toggle="dropdown" aria-expanded="false">
+											<span>Покупцям</span>
+										</button>
+										<ul class="dropdown-menu" data-dropdown-menu>
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+									<div class="dropdown dropdown-sm dropdown--gray" data-dropdown>
+										<button class="dropdown-toggle _icon-arrow-bottom" type="button" data-toggle="dropdown" aria-expanded="false">
+											<span>Про нас</span>
+										</button>
+										<ul class="dropdown-menu" data-dropdown-menu>
+											<li><a class="dropdown-item" href="#">Action</a></li>
+											<li><a class="dropdown-item" href="#">Another action</a></li>
+											<li><a class="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="top-header__phone phone-block">
+									<a href="tel:0951439079" class="phone-block__phone _icon-phone">
+										<span>095 143 9079</span>
+
+									</a>
+									<a href="#" class="phone-block__link">
+										Написати в телеграм
+									</a>
+								</div>
+							</div>
+							<div class="flex items-center lg:gap-5 gap-4 flex-wrap lg:justify-end justify-between lg:!w-max w-full z-20">
+								<div class="top-header__search search-block-small lg:!flex hidden">
+									<button type="button" class="search-block-small-button _icon-search-gray">
+										<span>Пошук</span>
+									</button>
+								</div>
+								<div class="top-header__actions lg:!hidden flex items-center gap-4">
+									<button type="button" class="menu__icon icon-menu"><span></span></button>
+									<ul>
+										<li class="">
+											<a href="#" class="top-header__actions-link top-header__actions-link--search search-block-small-button">
+												<i class="_icon-search-gray">
+
+												</i>
+											</a>
+
+										</li>
+										<li class="">
+											<a href="#" class="top-header__actions-link top-header__actions-link--tg">
+												<i class="_icon-tg">
+
+												</i>
+											</a>
+
+										</li>
+									</ul>
+								</div>
+								<div class="top-header__logo lg:hidden">
+									<a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="102" height="24" viewBox="0 0 102 24" fill="none">
+											<path d="M14.2266 5.29249H14.0134L8.31214 21.3201L2.10472 5.29249H0L7.19324 23.8674H9.29796L8.41865 21.5854L14.2266 5.29249Z" fill="#D4769A" />
+											<path d="M16.0837 5.29249V23.8674H18.1884V5.29249H16.0837Z" fill="#D4769A" />
+											<path d="M34.3925 5.29249H34.1792L28.5311 17.2866L22.1638 5.29249H20.0591L26.5597 17.4458V23.8674H28.6644V17.4458L34.3925 5.29249Z" fill="#D4769A" />
+											<path d="M52.4708 18.5071C51.1121 21.1873 49.0339 22.7263 46.6628 23.0979C41.974 23.7878 38.1109 21.373 36.6722 16.6763C35.2604 12.0059 36.9121 6.64581 41.4412 5.66391C44.9578 4.8944 48.9009 6.85798 50.8989 10.2547V7.09684C50.1531 6.4601 47.0891 5.02717 44.1587 5.02717C38.9103 5.02717 34.1147 9.27281 34.1147 14.5268C34.1147 19.7544 38.6705 24 43.9454 24C48.6611 24 51.2186 21.5854 52.6573 18.6134L52.4708 18.5071Z" fill="#D4769A" />
+											<path d="M66.1733 5.29249V12.7754H56.902V5.29249H54.7972V23.8674H56.902V12.9613H66.1733V23.8674H68.2781V5.29249H66.1733Z" fill="#D4769A" />
+											<path d="M84.9816 5.29249V17.6051C84.9816 20.6035 82.9834 23.4429 79.7067 23.7082C75.8436 24.0267 73.5789 21.373 73.5789 16.9946V5.29249H71.4742V16.9946C71.4742 21.8242 74.8046 24 78.7742 24C82.5306 24 85.1681 21.3201 85.1681 17.6051V5.29249H84.9816Z" fill="#D4769A" />
+											<path d="M99.762 23.8674H102L94.9133 11.4752L100.721 5.50467H100.428L90.4642 15.774V5.29249H88.3595V23.8674H90.4642V16.0394L93.4746 12.9347L99.762 23.8674Z" fill="#D4769A" />
+											<path d="M81.511 0.0362584C81.511 0.0362584 78.1077 2.36191 78.6271 3.07604C78.8963 3.44611 82.4113 1.23701 82.4113 1.23701C82.508 1.1356 82.6219 0.82356 82.3046 0.385875C81.9871 -0.0518109 81.6432 -0.0295724 81.511 0.0362584Z" fill="#D4769A" />
+										</svg>
+									</a>
+								</div>
+								<div class="top-header__actions">
+									<ul>
+
+										<li class="lg:!inline-block hidden">
+											<a href="#" class="top-header__actions-link top-header__actions-link--user">
+												<i class="_icon-user">
+
+												</i>
+											</a>
+
+										</li>
+										<li>
+											<a href="#" class="top-header__actions-link top-header__actions-link--favorite">
+												<i class="_icon-favorite">
+
+												</i>
+											</a>
+
+										</li>
+										<li>
+											<a href="#" class="top-header__actions-link top-header__actions-link--cart">
+
+												<div class="inline-flex relative">
+													<i class="_icon-cart">
+
+													</i>
+													<span class="badge">3</span>
+												</div>
+												<span class="lg:!inline-block hidden">
+													2 390 грн
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="header__bottom bottom-header">
+							<div class="bottom-header__menu menu">
+
+								<nav class="menu__body">
+									<ul>
+										<li class="menu-item menu-item--new-collection menu-item-pink current-menu-item">
+											<a href="#">
+												New collection' 24
+											</a>
+
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="#">
+												<span>
+													Комплекти
+												</span>
+												<span class="arrow"></span>
+											</a>
+											<span class="menu-item-has-children-back">
+												Комплекти
+											</span>
+											<ul class="menu-item-submenu">
+
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image">
+															<img src="img/komplekty/01.webp" alt="Image">
+														</span>
+														<div class="menu-item__content">
+															Всі комплекти
+														</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/02.webp" alt="Komplekt 02"></span>
+														<div class="menu-item__content">Комплект Софія</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/03.webp" alt="Komplekt 03"></span>
+														<div class="menu-item__content">Комплекти без кісточок</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/04.webp" alt="Komplekt 04"></span>
+														<div class="menu-item__content">Комплекти з бавовни</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/05.webp" alt="Komplekt 05"></span>
+														<div class="menu-item__content">Комплекти з вишивкою</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/06.webp" alt="Komplekt 06"></span>
+														<div class="menu-item__content">Комплекти з доступом</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/07.webp" alt="Komplekt 07"></span>
+														<div class="menu-item__content">Комплекти з паралоновою чашкою</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/08.webp" alt="Komplekt 08"></span>
+														<div class="menu-item__content">Комплекти з сітки</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/09.webp" alt="Komplekt 09"></span>
+														<div class="menu-item__content">Корсети</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/010.webp" alt="Komplekt 010"></span>
+														<div class="menu-item__content">Мереживні комплекти</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/011.webp" alt="Komplekt 011"></span>
+														<div class="menu-item__content">Трусики</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/komplekty/012.webp" alt="Komplekt 011"></span>
+														<div class="menu-item__content">Шовкові комплекти</div>
+													</a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="#">
+												Білизна
+												<span class="arrow"></span>
+											</a>
+											<span class="menu-item-has-children-back">
+												Білизна
+											</span>
+											<ul class="menu-item-submenu">
+
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="#">
+												Купальники
+												<span class="arrow"></span>
+											</a>
+											<span class="menu-item-has-children-back">
+												Купальники
+											</span>
+											<ul class="menu-item-submenu">
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image">
+															<img src="img/kupalnik/Kupalnyky-300x278.webp" alt="Image">
+														</span>
+														<div class="menu-item__content">
+															Біфлекс
+														</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/kupalnik/Kupalnyky-300x278.webp" alt="Komplekt 02"></span>
+														<div class="menu-item__content"> Жатка</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="#">
+												Домашній одяг
+												<span class="arrow"></span>
+											</a>
+											<span class="menu-item-has-children-back">
+												Домашній одяг
+											</span>
+											<ul class="menu-item-submenu">
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image">
+															<img src="img/house-clothes/f476f9914e8b9c734ea4127a0eb929e3.Domashni-kostyumy-300x278.webp" alt="Image">
+														</span>
+														<div class="menu-item__content">
+															Домашні костюми
+
+
+
+
+
+
+														</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/house-clothes/1150063d7b721e2e07a4c026803419aa.Penyuary-300x278.webp" alt="Komplekt 02"></span>
+														<div class="menu-item__content"> Пенюари</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image">
+															<img src="img/house-clothes/9eba73d554cb70d345ce1016d2ffe117.Sukni-300x278.webp" alt="Image">
+														</span>
+														<div class="menu-item__content">
+															Сукні
+														</div>
+													</a>
+												</li>
+												<li class="menu-item">
+													<a href="#">
+														<span class="menu-item__image"><img src="img/house-clothes/8080d8466baa0049556c96a2eaa50574.Halaty-300x278.webp" alt="Komplekt 02"></span>
+														<div class="menu-item__content"> Халати</div>
+													</a>
+												</li>
+											</ul>
+										</li>
+										<li class="menu-item menu-item-has-children">
+											<a href="#">
+												Одяг для вулиці
+												<span class="arrow"></span>
+											</a>
+											<span class="menu-item-has-children-back">
+												Одяг для вулиці
+											</span>
+											<ul class="menu-item-submenu">
+
+											</ul>
+										</li>
+										<li class="menu-item">
+											<a href="#">
+
+												Останній розмір
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="#">
+												Сертифікати
+											</a>
+										</li>
+										<li class="menu-item menu-item-pink menu-item--news">
+											<a href="#">
+												Новеньке
+											</a>
+										</li>
+										<li class="menu-item menu-item-pink menu-item--sale">
+											<a href="#">
+												SALE
+											</a>
+										</li>
+
+
+
+
+
+
+
+
+									</ul>
+									<div class="menu__content--mob">
+										<div class="menu__content--personal-area personal-area">
+											<div class="personal-area__content">
+												<span>
+													Особистий кабінет
+												</span>
+												<ul class="personal-area__list">
+													<li>
+														<a href="#" class="_icon-cabinet">
+															<span>Особисті дані</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="_icon-order">
+															<span>Мої замовлення</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="_icon-exit">
+															<span>Вийти з кабінету</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div data-spollers class="menu__content-mor-menu spollers">
+											<details class="spollers__item">
+												<summary class="spollers__title">Допомога</summary>
+												<div class="spollers__body">Контент спойлера</div>
+											</details>
+											<details class="spollers__item">
+												<summary class="spollers__title">Компанія</summary>
+												<div class="spollers__body">
+													<ul>
+														<li>
+															<a href="#">
+																Компанія
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Про бренд
+
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Вакансіі
+
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Співпраця
+
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																Контакти
+															</a>
+														</li>
+													</ul>
+												</div>
+											</details>
+										</div>
+										<div class="phone-block">
+											<a href="tel:0951439079" class="phone-block__phone _icon-phone">
+												<span>095 143 9079</span>
+
+											</a>
+											<a href="#" class="phone-block__link block">
+												Написати в телеграм
+											</a>
+										</div>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="search-block">
+			<div class="search-block__container">
+				<div class="search-block__wrap">
+					<form action="files/sendmail/sendmail.php" class="search-block__form form" method="POST">
+						<div class="input-group">
+							<i class="_icon-search-gray">
+
+							</i>
+							<input autocomplete="off" type="text" name="form[]" placeholder="Пошук по сайту" class="input">
+							<button type="button" class="input-group-button-delete">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+									<path d="M1.4375 0.553619L0.553711 1.43741L0.998047 1.87686L7.11621 7.99991L0.553711 14.5624L1.4375 15.4462L8 8.8837L14.1182 15.0067L14.5625 15.4462L15.4463 14.5624L15.0068 14.1181L8.88379 7.99991L15.4463 1.43741L14.5625 0.553619L8 7.11612L1.87695 0.997956L1.4375 0.553619Z" fill="#939393" />
+								</svg>
+							</button>
+						</div>
+					</form>
+					<div class="search-block__body">
+						<div class="search-block__list">
+							<div class="search-block__line line-searched">
+								<div class="line-searched__body">
+									<a href="#" class="line-searched__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-searched__content">
+										<a href="#" class="line-searched__link">Комплект Amelia</a>
+										<ul class="line-searched__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<div class="price-box price-box-md">
+											<div class="price-new">
+												1699 грн
+											</div>
+											<div class="price-old">
+												1999 грн
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search-block__line line-searched">
+								<div class="line-searched__body">
+									<a href="#" class="line-searched__previews">
+										<img src="img/previews/02.webp" alt="Image">
+									</a>
+									<div class="line-searched__content">
+										<a href="#" class="line-searched__link">Комплект Amelia</a>
+										<ul class="line-searched__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<div class="price-box price-box-md">
+											<div class="price-new">
+												1699 грн
+											</div>
+											<div class="price-old">
+												1999 грн
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="search-block__line line-searched">
+								<div class="line-searched__body">
+									<a href="#" class="line-searched__previews">
+										<img src="img/previews/03.webp" alt="Image">
+									</a>
+									<div class="line-searched__content">
+										<a href="#" class="line-searched__link">Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia Комплект Amelia</a>
+										<ul class="line-searched__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<div class="price-box price-box-md">
+											<div class="price-new">
+												1699 грн
+											</div>
+											<div class="price-old">
+												1999 грн
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-block__footer">
+							<a href="#" class="button button-md button-border--black w-full">
+								Всі результати пошуку
+							</a>
+						</div>
+						<!-- <div class="search-block__empty" >
+          Нічого не знайшлося за вашим запитом
+        </div> -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<main class="page">
+			<section class="catalog section-margin-b-sm">
+				<div class="catalog__container">
+					<div class="catalog__content">
+						<div class="catalog__header header-catalog">
+							<div class="header-catalog__body">
+								<div class="header-catalog__text">
+									<div class="header-catalog__breadcrumbs breadcrumbs">
+										<div class="breadcrumbs__list">
+											<ul>
+												<li>
+													<a href="#">
+														Головна
+
+
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Комплекти білизни
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- /.header-catalog__breadcrumbs breadcrumbs -->
+									<h1 class="h1 catalog__title">
+										Комплекти білизни <sup class="badge-count">
+											124
+										</sup>
+									</h1>
+									<div class="header-catalog__descr">
+										<p>
+											Ексклюзивні моделі на будь-який смак
+										</p>
+									</div>
+								</div>
+								<div class="header-catalog__image">
+									<img src="img/catalog/preview.webp" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="catalog__body">
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.catalog -->
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div data-spollers="768, max" class="footer__menu spollers spollers-type-footer">
+						<div class="footer__column column-main">
+							<a href="#" class="footer__logo">
+								<svg xmlns="http://www.w3.org/2000/svg" width="220" height="52" viewBox="0 0 220 52" fill="none">
+									<path d="M30.6847 11.4669H30.2252L17.9283 46.1931L4.5394 11.4669H0L15.5147 51.7124H20.0544L18.1579 46.768L30.6847 11.4669Z" fill="#D4769A" />
+									<path d="M34.6905 11.4669V51.7124H39.2299V11.4669H34.6905Z" fill="#D4769A" />
+									<path d="M74.1798 11.4669H73.72L61.5379 37.4539L47.8046 11.4669H43.2649L57.2856 37.7991V51.7124H61.8253V37.7991L74.1798 11.4669Z" fill="#D4769A" />
+									<path d="M113.172 40.0988C110.242 45.9058 105.76 49.2402 100.646 50.0452C90.532 51.5399 82.2002 46.308 79.0972 36.1316C76.0518 26.0128 79.6143 14.399 89.3828 12.2718C96.968 10.6045 105.472 14.859 109.782 22.2183V15.3764C108.173 13.9966 101.565 10.8919 95.2441 10.8919C83.9241 10.8919 73.5807 20.091 73.5807 31.4748C73.5807 42.8011 83.4067 52 94.7843 52C104.955 52 110.472 46.768 113.575 40.3289L113.172 40.0988Z" fill="#D4769A" />
+									<path d="M142.727 11.4669V27.68H122.73V11.4669H118.19V51.7124H122.73V28.0825H142.727V51.7124H147.266V11.4669H142.727Z" fill="#D4769A" />
+									<path d="M183.294 11.4669V38.144C183.294 44.6407 178.984 50.7926 171.916 51.3675C163.584 52.0576 158.7 46.3079 158.7 36.8217V11.4669H154.16V36.8217C154.16 47.2854 161.343 52 169.905 52C178.007 52 183.696 46.1931 183.696 38.144V11.4669H183.294Z" fill="#D4769A" />
+									<path d="M215.173 51.7124H220L204.715 24.863L217.242 11.9268H216.61L195.119 34.1768V11.4669H190.579V51.7124H195.119V34.7517L201.612 28.0249L215.173 51.7124Z" fill="#D4769A" />
+									<path d="M175.808 0.0786476C175.808 0.0786476 168.467 5.11737 169.588 6.66449C170.169 7.46632 177.75 2.67993 177.75 2.67993C177.958 2.46044 178.204 1.78434 177.52 0.835954C176.835 -0.112406 176.093 -0.064067 175.808 0.0786476Z" fill="#D4769A" />
+								</svg>
+								<span>Одяг, як прояв любові до себе</span>
+							</a>
+							<div class="footer__info">
+								<span>Відділ турботи:</span>
+								<ul>
+									<li>
+										<a href="tel:095 143 9079">095 143 9079</a>
+									</li>
+									<li><a href="mailto:info@viychuk.shop">info@viychuk.shop</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__column column">
+							<details class="spollers__item column-block">
+								<summary class="spollers__title column__title">Каталог</summary>
+								<div class="spollers__body">
+									<ul class="menu">
+										<li>
+											<a href="#">
+												New collection' 24
+											</a>
+										</li>
+										<li>
+											<a href="#">Комплекти</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Білизна
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Купальники
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Домашній одяг
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Одяг для вулиці
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Сертифікати
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Останній розмір
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Новеньке
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Акціі
+											</a>
+										</li>
+
+
+									</ul>
+								</div>
+							</details>
+						</div>
+						<div class="footer__column column">
+							<details class="spollers__item column-block">
+								<summary class="spollers__title column__title">Допомога</summary>
+								<div class="spollers__body">
+									<ul class="menu">
+										<li>
+											<a href="#">
+												Гарантія
+
+											</a>
+										</li>
+										<li>
+											<a href="#"> Доставка та оплата
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Повернення / обмін товару
+
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												FAQ
+											</a>
+
+										</li>
+
+
+									</ul>
+								</div>
+							</details>
+							<div class="column__socials column-block md:mt-0 mt-2" data-da=".footer__column-mob, 768">
+								<div class="column__title">
+									Ми в соцмережах:
+								</div>
+								<div class="column__socials-block">
+									<a href="#" class="big-link-inst">
+										viychuk_lingerie
+									</a>
+									<ul>
+										<li>
+											<a href="#">
+												<img src="img/icons-socials/tiktok.svg" alt="Image">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/icons-socials/fb.svg" alt="Image">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/icons-socials/whatsapp.svg" alt="Image">
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/icons-socials/tg.svg" alt="Image">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="mt-4 md:hidden">
+									<img src="img/icons/payments.webp" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="footer__column column">
+							<details class="spollers__item column-block">
+								<summary class="spollers__title column__title">Компанія</summary>
+								<div class="spollers__body">
+									<ul class="menu">
+										<li>
+											<a href="#">
+
+												Про бренд
+
+
+											</a>
+										</li>
+										<li>
+											<a href="#"> Вакансіі
+
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Співпраця
+
+											</a>
+
+										</li>
+										<li>
+											<a href="#">
+												Контакти
+											</a>
+
+										</li>
+
+
+									</ul>
+								</div>
+							</details>
+							<div class="column-block sm:block hidden">
+								<img src="img/icons/payments.webp" alt="Image">
+							</div>
+						</div>
+						<div class="footer__column footer__column-mob">
+
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copyright">
+							Всі права захищені 2020-2024
+						</div>
+						<div class="footer__bottom-menu">
+							<ul>
+								<li>
+									<a href="#">
+										Публічна оферта
+
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Політика конфіденційності
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__develop">
+							Створення сайту - <a href="#">Nextweb</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240726011805"></script>
+</body>
+
+</html>
