@@ -2067,9 +2067,23 @@ select option[selected] {
 }
 .words__wrap {
   min-height: 4.25rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 40px
+}
+.words__marquee {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+  -webkit-animation: scroll 0s linear infinite;
+  animation: scroll 0s linear infinite;
+  gap: 2.5rem
 }
 .words__marquee p {
   display: inline-flex;
@@ -2081,26 +2095,27 @@ select option[selected] {
   width: 1.625rem;
   height: 1.625rem;
   flex: 0 0 1.625rem;
-  background: url(../img/icons/icon-word.svg) 0 0 no-repeat
+  background: url(../img/icons/icon-word.svg) 0 0 no-repeat;
+  margin-left: 40px
 }
 @-webkit-keyframes scroll {
-  from {
+  0% {
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
+  100% {
+    -webkit-transform: translateX(calc(-100% - 40px));
+    transform: translateX(calc(-100% - 40px))
   }
 }
 @keyframes scroll {
-  from {
+  0% {
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
-  to {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%)
+  100% {
+    -webkit-transform: translateX(calc(-100% - 40px));
+    transform: translateX(calc(-100% - 40px))
   }
 }
 .words p {
@@ -2170,17 +2185,24 @@ select option[selected] {
   text-decoration: underline
 }
 .insta-section__wrap {
+  min-height: 4.25rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  gap: 40px
 }
 .insta-section__marquee {
   flex-shrink: 0;
   display: flex;
-  justify-content: center;
-  -webkit-animation: scroll 100s linear infinite;
-  animation: scroll 100s linear infinite;
-  gap: .625rem;
+  justify-content: space-between;
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  gap: 1rem;
   margin-left: .625rem
 }
 .insta-section__marquee img {
@@ -2189,13 +2211,13 @@ select option[selected] {
   border-radius: .375rem
 }
 @keyframes scroll {
-  from {
+  0% {
     -webkit-transform: translateX(0);
     transform: translateX(0)
   }
-  to {
-    -webkit-transform: translateX(calc(-100% - 20px));
-    transform: translateX(calc(-100% - 20px))
+  100% {
+    -webkit-transform: translateX(calc(-100% - 16px));
+    transform: translateX(calc(-100% - 16px))
   }
 }
 .support__column.column-left {
@@ -2667,12 +2689,6 @@ select option[selected] {
   }
   .categories-section .categories-row__image img {
     height: 32.5rem
-  }
-  .words__marquee p {
-    margin-left: 2.5rem
-  }
-  .words__marquee p::after {
-    margin-left: 2.5rem
   }
   .about__right .right-about__column {
     min-height: 15rem
@@ -3260,12 +3276,6 @@ select option[selected] {
   .categories-section .categories-row__image img {
     height: 18.75rem
   }
-  .words__marquee p {
-    margin-left: 1.25rem
-  }
-  .words__marquee p::after {
-    margin-left: 1.25rem
-  }
   .about__right .right-about__column {
     min-height: 7.5rem
   }
@@ -3368,26 +3378,6 @@ select option[selected] {
   @supports not (height:clamp(18.75rem ,15rem + 16.6666666667vw ,32.5rem)) {
     .categories-section .categories-row__image img {
       height: calc(18.75rem + 13.75 * (100vw - 22.5rem)/ 82.5)
-    }
-  }
-  @supports (margin-left:clamp(1.25rem ,0.9090909091rem + 1.5151515152vw ,2.5rem)) {
-    .words__marquee p {
-      margin-left: clamp(1.25rem ,.9090909091rem + 1.5151515152vw ,2.5rem)
-    }
-  }
-  @supports not (margin-left:clamp(1.25rem ,0.9090909091rem + 1.5151515152vw ,2.5rem)) {
-    .words__marquee p {
-      margin-left: calc(1.25rem + 1.25 * (100vw - 22.5rem)/ 82.5)
-    }
-  }
-  @supports (margin-left:clamp(1.25rem ,0.9090909091rem + 1.5151515152vw ,2.5rem)) {
-    .words__marquee p::after {
-      margin-left: clamp(1.25rem ,.9090909091rem + 1.5151515152vw ,2.5rem)
-    }
-  }
-  @supports not (margin-left:clamp(1.25rem ,0.9090909091rem + 1.5151515152vw ,2.5rem)) {
-    .words__marquee p::after {
-      margin-left: calc(1.25rem + 1.25 * (100vw - 22.5rem)/ 82.5)
     }
   }
   @supports (min-height:clamp(7.5rem ,5.4545454545rem + 9.0909090909vw ,15rem)) {

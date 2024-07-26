@@ -5173,34 +5173,6 @@
         }));
     };
     addEventListenersToMenuItems(menuItemsWithChildren);
-    function Marquee(selector, speed) {
-        const parentSelectors = document.querySelectorAll(selector);
-        parentSelectors.forEach((parentSelector => {
-            const clone = parentSelector.innerHTML;
-            let firstElement = parentSelector.children[0];
-            let i = 0;
-            let marqueeInterval;
-            parentSelector.insertAdjacentHTML("beforeend", clone);
-            parentSelector.insertAdjacentHTML("beforeend", clone);
-            function startMarquee() {
-                marqueeInterval = setInterval((function() {
-                    firstElement.style.marginLeft = `-${i}px`;
-                    if (i > firstElement.clientWidth) {
-                        i = 0;
-                        firstElement = parentSelector.children[0];
-                    }
-                    i += speed;
-                }), 0);
-            }
-            function stopMarquee() {
-                clearInterval(marqueeInterval);
-            }
-            parentSelector.addEventListener("mouseenter", stopMarquee);
-            parentSelector.addEventListener("mouseleave", startMarquee);
-            startMarquee();
-        }));
-    }
-    window.addEventListener("load", (() => Marquee(".marquee", .4)));
     document.addEventListener("DOMContentLoaded", (() => {
         toggleAuthForms();
         initButtonToTop();
