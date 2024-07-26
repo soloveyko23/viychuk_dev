@@ -5,12 +5,20 @@
 	<title>HomePage</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240726011805">
+	<style>
+		body {
+			opacity: 0;
+		}
+
+		.loaded body {
+			opacity: 1;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240726092938">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com?_v=20240726011805"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20240726092938"></script>
 </head>
 
 <body>
@@ -111,7 +119,7 @@
 									<ul>
 
 										<li class="lg:!inline-block hidden">
-											<a href="#" class="top-header__actions-link top-header__actions-link--user">
+											<a href="#" class="top-header__actions-link top-header__actions-link--user" data-toggle="offcanvas" data-offcanvas-target="#authUser">
 												<i class="_icon-user">
 
 												</i>
@@ -384,7 +392,7 @@
 												</span>
 												<ul class="personal-area__list">
 													<li>
-														<a href="#" class="_icon-cabinet">
+														<a href="#" class="_icon-cabinet" data-toggle="offcanvas" data-offcanvas-target="#authUser">
 															<span>Особисті дані</span>
 														</a>
 													</li>
@@ -1021,6 +1029,7 @@
 														</div>
 													</div>
 													<!-- /.product-card -->
+													п
 												</div>
 												<div class="bestsellers__slide swiper-slide">
 													<div class="product-card">
@@ -2139,8 +2148,180 @@
 				</div>
 			</div>
 		</footer>
+		<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+					<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+				</svg>
+			</button>
+			<div class="popup__text">
+				Popup content
+			</div>
+		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240726011805"></script>
+</div> -->
+
+		<div class="offcanvas offcanvas-md" id="filterMore">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+				<button type="button" class="btn-close" data-close aria-label="Close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+						<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+						<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#DDDDDD" />
+						<path d="M18.75 18.043L18.043 18.75L18.3984 19.1016L23.293 24L18.043 29.25L18.75 29.957L24 24.707L28.8945 29.6055L29.25 29.957L29.957 29.25L29.6055 28.8945L24.707 24L29.957 18.75L29.25 18.043L24 23.293L19.1016 18.3984L18.75 18.043Z" fill="black" />
+					</svg>
+				</button>
+			</div>
+			<div class="offcanvas-body">
+				<div>
+					Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+				</div>
+				<div class="dropdown mt-3">
+					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+						Dropdown button
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-lg offcanvas-auth" id="authUser">
+
+			<div class="offcanvas-body">
+				<div class="offcanvas-auth--login show">
+					<div class="offcanvas-auth__header">
+						<div class="relative z-5">
+							<h3 class="h3 mb-3">
+								Увійдіть у особистий кабінет
+							</h3>
+							<div class="main-text">
+								<p>
+									Увійдіть в Особистий кабінет використовуючи пошту і пароль, і оформляйте замовлення в один клік. Якщо у вас ще немає облікового запису, пройдіть просту реєстрацію.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="offcanvas-auth__row">
+						<form action="files/sendmail/sendmail.php" class="offcanvas-auth__form form" method="POST">
+							<div class="form__row grid sm:grid-cols-2 gap-2">
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пошта" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="input">
+								</div>
+							</div>
+							<div class="form__row row-actions">
+								<div class="form__line">
+									<button type="submit" class="button button-md button-black">Увійти</button>
+								</div>
+								<div class="form__line">
+									<a href="#" class="link-black forgot-pass">Забули пароль?</a>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="offcanvas-auth__row">
+						<h3 class="h3 mb-5">Нема профіля?</h3>
+						<button type="button" class="button button-md button-black button-auth-register">Зареєструватися</button>
+					</div>
+				</div>
+				<div class="offcanvas-auth--registration">
+					<div class="offcanvas-auth__header">
+						<div class="relative z-5">
+							<h3 class="h3 mb-3">
+								Реєстрація нового клієнта
+							</h3>
+							<ul>
+								<li>
+									отримуй персональні знижки
+
+
+
+								</li>
+								<li>
+									керуй списком вибраного
+								</li>
+								<li>
+									відслідковуй статуси ваших замовлень онлайн
+								</li>
+								<li>
+									прискорене оформлення замовлення
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="offcanvas-auth__row">
+						<form action="files/sendmail/sendmail.php" class="offcanvas-auth__form form" method="POST">
+							<div class="form__row grid sm:grid-cols-2 gap-2">
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Ваше ім'я" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Ваше прізвище" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пошта" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="input">
+								</div>
+								<div class="form__line">
+									<select name="form[]" data-class-modif="form" data-search>
+										<option value="1" selected>Ваша країна</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+										<option value="2">Пункт №2</option>
+										<option value="3">Пункт №3</option>
+										<option value="4">Пункт №4</option>
+									</select>
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Ваше місто" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="input">
+								</div>
+								<div class="form__line">
+									<input autocomplete="off" type="text" name="form[]" placeholder="Повторіть пароль" class="input">
+								</div>
+							</div>
+							<div class="form__row row-actions">
+								<div class="form__line w-full">
+									<button type="submit" class="button button-md button-black w-full">Створити мій профіль</button>
+								</div>
+								<div class="form__policy">
+									<p>
+										Реєструючись, ви погоджуєтесь з <a href="#">користувальницькою угодою</a>
+									</p>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="offcanvas-auth__row">
+						<h3 class="h3 mb-5">Вже маєш профіль?</h3>
+						<button type="button" class="button button-md button-black button-auth-login">Авторизуватися в кабінет</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240726092938"></script>
 </body>
 
 </html>
