@@ -2071,6 +2071,7 @@ select option[selected] {
   max-width: -moz-fit-content;
   max-width: fit-content;
   position: relative;
+  justify-content: center;
   display: flex;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -2081,8 +2082,8 @@ select option[selected] {
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
-  -webkit-animation: scroll 0s linear infinite;
-  animation: scroll 0s linear infinite;
+  -webkit-animation: scroll 20s linear infinite;
+  animation: scroll 20s linear infinite;
   gap: 2.5rem
 }
 .words__marquee p {
@@ -2191,6 +2192,7 @@ select option[selected] {
   max-width: fit-content;
   position: relative;
   display: flex;
+  justify-content: center;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
