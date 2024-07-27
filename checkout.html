@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240727204442">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.tailwindcss.com?_v=20240727204442"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--no-fixed">
+			<div class="header__container">
+				<div class="header__body flex items-center justify-between gap-4">
+					<a href="#" class="header__logo !block">
+						<svg xmlns="http://www.w3.org/2000/svg" width="126" height="30" viewBox="0 0 126 30" fill="none">
+							<path d="M17.574 6.61549H17.3108L10.268 26.6499L2.59984 6.61549H0L8.88569 29.8341H11.4857L10.3995 26.9815L17.574 6.61549Z" fill="#D4769A" />
+							<path d="M19.8682 6.61549V29.8341H22.468V6.61549H19.8682Z" fill="#D4769A" />
+							<path d="M42.4848 6.61549H42.2214L35.2444 21.608L27.379 6.61549H24.779L32.809 21.8072V29.8341H35.4091V21.8072L42.4848 6.61549Z" fill="#D4769A" />
+							<path d="M64.8169 23.1339C63.1384 26.4841 60.5714 28.4078 57.6425 28.8722C51.8502 29.7346 47.0783 26.7161 45.3011 20.8452C43.5569 15.0074 45.5973 8.30714 51.192 7.07986C55.5362 6.11795 60.4069 8.57249 62.8751 12.8183V8.87102C61.9537 8.07496 58.169 6.2838 54.5489 6.2838C48.0656 6.2838 42.1417 11.591 42.1417 18.1586C42.1417 24.6929 47.7693 30 54.2855 30C60.1106 30 63.2701 26.9815 65.0473 23.2667L64.8169 23.1339Z" fill="#D4769A" />
+							<path d="M81.7435 6.61549V15.9693H70.2907V6.61549H67.6909V29.8341H70.2907V16.2015H81.7435V29.8341H84.3433V6.61549H81.7435Z" fill="#D4769A" />
+							<path d="M104.977 6.61549V22.0062C104.977 25.7543 102.509 29.3034 98.4611 29.6351C93.6891 30.0332 90.8918 26.7161 90.8918 21.2433V6.61549H88.2918V21.2433C88.2918 27.28 92.4057 30 97.3092 30C101.95 30 105.208 26.6499 105.208 22.0062V6.61549H104.977Z" fill="#D4769A" />
+							<path d="M123.236 29.8341H126L117.246 14.344L124.42 6.88085H124.058L111.75 19.7174V6.61549H109.15V29.8341H111.75V20.0491L115.469 16.1682L123.236 29.8341Z" fill="#D4769A" />
+							<path d="M100.69 0.0453736C100.69 0.0453736 96.4858 2.95233 97.1276 3.8449C97.4603 4.3075 101.802 1.54612 101.802 1.54612C101.922 1.41949 102.062 1.02943 101.67 0.482281C101.278 -0.0648495 100.854 -0.0369617 100.69 0.0453736Z" fill="#D4769A" />
+						</svg>
+					</a>
+					<div class="top-header__phone phone-block">
+						<a href="tel:0951439079" class="phone-block__phone _icon-phone">
+							<span>095 143 9079</span>
+
+						</a>
+						<a href="#" class="phone-block__link">
+							<span class="sm:!inline-block hidden">Написати в телеграм</span>
+							<i class="sm:hidden">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none">
+									<path d="M1.42796 6.83987C6.66463 4.53612 13.4413 1.72737 14.3767 1.33862C16.8305 0.321117 17.5834 0.516117 17.208 2.76945C16.9384 4.38903 16.1605 9.75112 15.5405 13.0886C15.1725 15.0678 14.3471 15.3024 13.0492 14.4461C12.425 14.034 9.27463 11.9507 8.59088 11.4615C7.96671 11.0157 7.10588 10.4795 8.18546 9.4232C8.56963 9.04695 11.088 6.64237 13.05 4.7707C13.3071 4.52487 12.9842 4.12112 12.6875 4.3182C10.043 6.07195 6.37629 8.50612 5.90963 8.8232C5.20463 9.30195 4.52754 9.52153 3.31213 9.17237C2.39379 8.90862 1.49671 8.59403 1.14754 8.47403C-0.197039 8.01237 0.122127 7.41445 1.42796 6.83987Z" fill="#1CB7FA" />
+								</svg>
+							</i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="checkout">
+				<div class="checkout__container">
+					<div data-tabs class="checkout-content tabs">
+						<div class="checkout-content__header">
+							<h1 class="h1 mb-4 text-center">
+								Оформленя замовлення
+							</h1>
+							<nav data-tabs-titles class="checkout-content__navigation">
+								<button type="button" class="checkout-content__title _tab-active">Я купую вперше</button>
+								<button type="button" class="checkout-content__title">Я маю кабінет</button>
+							</nav>
+						</div>
+						<div data-tabs-body class="checkout-content__content">
+							<div class="checkout-content__body">
+								<form action="files/sendmail/sendmail.php" class="checkout-content-form form" method="POST">
+									<div class="form-column column-inputs">
+										<div class="form__row grid sm:grid-cols-2 grid-cols-1 gap-3">
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Ваше ім'я" class="input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Ваше прізвище" class="input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Пошта" class="input">
+											</div>
+											<div class="form__line">
+												<input autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="input">
+											</div>
+										</div>
+										<div class="form__row row-present">
+											<div class="row-present__button">
+												<span>На подарунок?</span>
+												<button type="button" class="button button-sm button-black button-show-forms">Клацни тут</button>
+											</div>
+											<div class="row-present__content hidden">
+												<h5 class="h5 mb-3 text-center">Вкажіть дані отримувача</h5>
+												<button type="button" class="btn-close">
+													<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+														<path d="M2.70703 2L2 2.70703L2.35547 3.05859L7.25 7.95703L2 13.207L2.70703 13.9141L7.95703 8.66406L12.8516 13.5625L13.207 13.9141L13.9141 13.207L13.5625 12.8516L8.66406 7.95703L13.9141 2.70703L13.207 2L7.95703 7.25L3.05859 2.35547L2.70703 2Z" fill="black" />
+													</svg>
+												</button>
+												<div class="grid sm:grid-cols-2 grid-cols-1 gap-3">
+													<div class="form__line">
+														<input autocomplete="off" type="text" name="form[]" placeholder="Ім'я та прізвище" class="input">
+													</div>
+													<div class="form__line">
+														<input autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="input">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form__row row-widget row--bg">
+											<div class="row-widget__body">
+												<div class="row-widget__header mb-3">
+													<h4 class="h4 mb-2 inline-flex gap-2 items-center">
+														Доставка
+														<i class="row-widget__title--tooltip" data-tippy-content="423432432432432 324 234234 234 324">
+															<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+																<path d="M8.375 0.25C3.89746 0.25 0.25 3.89746 0.25 8.375C0.25 12.8525 3.89746 16.5 8.375 16.5C12.8525 16.5 16.5 12.8525 16.5 8.375C16.5 3.89746 12.8525 0.25 8.375 0.25ZM8.375 1.5C12.1787 1.5 15.25 4.57129 15.25 8.375C15.25 12.1787 12.1787 15.25 8.375 15.25C4.57129 15.25 1.5 12.1787 1.5 8.375C1.5 4.57129 4.57129 1.5 8.375 1.5ZM8.44824 4C6.93457 4.08789 5.69922 5.35742 5.69922 6.90039H6.94922C6.94922 5.88477 7.82812 5.08887 8.90234 5.27441C9.66895 5.40625 10.2744 6.1582 10.25 6.94922C10.2305 7.64258 9.82519 8.08203 9.22949 8.3457C8.8584 8.51172 8.50684 8.66797 8.20898 8.98047C7.91113 9.29297 7.75 9.75684 7.75 10.25H9C9 9.9668 9.03906 9.92285 9.11719 9.83984C9.19043 9.76172 9.39551 9.63965 9.73242 9.48828C10.665 9.08301 11.4658 8.18945 11.5 6.98828C11.5439 5.56738 10.5234 4.2832 9.1123 4.03906C8.88769 4.00488 8.66309 3.99024 8.44824 4ZM7.75 11.5V12.75H9V11.5H7.75Z" fill="#939393" />
+															</svg>
+														</i>
+													</h4>
+													<div class="main-text">
+														<p>
+															Залежно від вибору країни та міста, тобі будуть запропоновані способи доставки
+														</p>
+													</div>
+												</div>
+												<div class="row-widget__content">
+													<div class="grid sm:grid-cols-2 grid-cols-1 gap-2 mb-2">
+														<div class="form__line">
+															<select name="form[]" data-class-modif="form" data-search>
+																<option value="1" selected>Ваша країна</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+																<option value="2">Пункт №2</option>
+																<option value="3">Пункт №3</option>
+																<option value="4">Пункт №4</option>
+															</select>
+														</div>
+														<div class="form__line">
+															<input autocomplete="off" type="text" name="form[]" placeholder="Ваше місто" class="input">
+														</div>
+													</div>
+													<div class="row-widget__delivery-options">
+														<div class="options options-type-2">
+															<div class="options__item">
+																<input id="o_1" class="options__input" checked type="radio" value="1" name="option">
+																<label for="o_1" class="options__label">
+																	<div class="options__label-wrap">
+																		<p class="options__text">Доставка на склад Нової пошти <span> <img src="img/icons/nova-poshta.svg" alt="icon"></span></p>
+																	</div>
+																	<div class="options-content">
+																		<select name="form[]" data-class-modif="form">
+																			<option value="1" selected>Ваше відділення Нової Пошти</option>
+																			<option value="2">Пункт №2</option>
+																			<option value="3">Пункт №3</option>
+																			<option value="4">Пункт №4</option>
+																		</select>
+																	</div>
+																</label>
+															</div>
+															<div class="options__item">
+																<input id="o_2" class="options__input" checked type="radio" value="1" name="option">
+																<label for="o_2" class="options__label">
+																	<div class="options__label-wrap">
+																		<p class="options__text">Доставка на поштомат Нової пошти <span> <img src="img/icons/nova-poshta-black.svg" alt="icon"></span></p>
+																	</div>
+																	<div class="options-content">
+
+																	</div>
+																</label>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="form__row row-widget row--bg">
+											<div class="row-widget__body">
+												<div class="row-widget__header mb-3">
+													<h4 class="h4 mb-2 inline-flex gap-2 items-center">
+														Оплата
+														<i class="row-widget__title--tooltip" data-tippy-content="423432432432432 324 234234 234 324">
+															<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+																<path d="M8.375 0.25C3.89746 0.25 0.25 3.89746 0.25 8.375C0.25 12.8525 3.89746 16.5 8.375 16.5C12.8525 16.5 16.5 12.8525 16.5 8.375C16.5 3.89746 12.8525 0.25 8.375 0.25ZM8.375 1.5C12.1787 1.5 15.25 4.57129 15.25 8.375C15.25 12.1787 12.1787 15.25 8.375 15.25C4.57129 15.25 1.5 12.1787 1.5 8.375C1.5 4.57129 4.57129 1.5 8.375 1.5ZM8.44824 4C6.93457 4.08789 5.69922 5.35742 5.69922 6.90039H6.94922C6.94922 5.88477 7.82812 5.08887 8.90234 5.27441C9.66895 5.40625 10.2744 6.1582 10.25 6.94922C10.2305 7.64258 9.82519 8.08203 9.22949 8.3457C8.8584 8.51172 8.50684 8.66797 8.20898 8.98047C7.91113 9.29297 7.75 9.75684 7.75 10.25H9C9 9.9668 9.03906 9.92285 9.11719 9.83984C9.19043 9.76172 9.39551 9.63965 9.73242 9.48828C10.665 9.08301 11.4658 8.18945 11.5 6.98828C11.5439 5.56738 10.5234 4.2832 9.1123 4.03906C8.88769 4.00488 8.66309 3.99024 8.44824 4ZM7.75 11.5V12.75H9V11.5H7.75Z" fill="#939393" />
+															</svg>
+														</i>
+													</h4>
+												</div>
+												<div class="row-widget__content">
+
+													<div class="row-widget__delivery-options">
+														<div class="options options-type-2">
+															<div class="options__item">
+																<input id="o_12" class="options__input" checked type="radio" value="1" name="option1">
+																<label for="o_12" class="options__label">
+																	<div class="options__label-wrap">
+																		<p class="options__text">Онлайн оплата Visa, Mastercard, Apple Pay, Google Pay <span> <img src="img/icons/opt-payments.svg" alt="icon"></span></p>
+																	</div>
+
+																</label>
+															</div>
+															<div class="options__item">
+																<input id="o_22" class="options__input" checked type="radio" value="1" name="option1">
+																<label for="o_22" class="options__label">
+																	<div class="options__label-wrap">
+																		<p class="options__text">Накладеним платежем на НП (за умови передплати 300 грн) <span> <img src="img/icons/nova-poshta.svg" alt="icon"></span></p>
+																	</div>
+
+																</label>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="form__row">
+											<textarea autocomplete="off" name="form[]" placeholder="Ваші побажання до замовлення" class="input"></textarea>
+										</div>
+									</div>
+
+									<div class="form-column column-goods">
+										<div class="column-goods__header">
+											<h4 class="h4">Ваше замовлення:</h4>
+											<a href="#" class="link-sm link-secondary">Змінити замовлення</a>
+										</div>
+										<div class="column-goods__content">
+											<div class="column-goods__list goods-list">
+												<div class="goods-list__line line-product">
+													<div class="line-product__body">
+														<a href="#" class="line-product__previews">
+															<img src="img/previews/01.webp" alt="Image">
+														</a>
+														<div class="line-product__content">
+															<a href="#" class="line-product__link">Комплект Amelia</a>
+															<ul class="line-product__characteristics">
+																<li>
+																	Колір: беж 007
+																</li>
+															</ul>
+															<ul class="line-product__sizes">
+																<li>
+																	Розмір бра: <span>S</span>
+																</li>
+																<li>
+																	Розмір трусиків: <span>M</span>
+																</li>
+															</ul>
+
+															<div class="line-product__price">
+																<div class="price-box price-box-md">
+																	<div class="flex items-center gap-2">
+																		<div class="price">
+																			1699 грн
+																		</div>
+																		<div class="count">
+																			2 шт
+																		</div>
+																	</div>
+																	<div class="price-total">
+																		3398 грн
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+												<div class="goods-list__line line-product">
+													<div class="line-product__body">
+														<a href="#" class="line-product__previews">
+															<img src="img/previews/01.webp" alt="Image">
+														</a>
+														<div class="line-product__content">
+															<a href="#" class="line-product__link">Комплект Amelia</a>
+															<ul class="line-product__characteristics">
+																<li>
+																	Колір: беж 007
+																</li>
+															</ul>
+															<ul class="line-product__sizes">
+																<li>
+																	Розмір бра: <span>S</span>
+																</li>
+																<li>
+																	Розмір трусиків: <span>M</span>
+																</li>
+															</ul>
+
+															<div class="line-product__price">
+																<div class="price-box price-box-md">
+																	<div class="flex items-center gap-2">
+																		<div class="price">
+																			1699 грн
+																		</div>
+																		<div class="count">
+																			2 шт
+																		</div>
+																	</div>
+																	<div class="price-total">
+																		3398 грн
+																	</div>
+																</div>
+															</div>
+
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="column-goods__promo promo-block">
+												<button type="button" class="button button-show-promo">
+													<i>
+														<img src="img/icons/promo.svg" alt="Image">
+													</i>
+													Маєш промокод? Використовуй його тут</button>
+												<div class="column-goods__promo-content hidden">
+													<div class="input-group">
+														<input autocomplete="off" type="text" name="form[]" placeholder="" class="input">
+														<button type="button" class="button button-sm button-black">Застосувати промокод</button>
+													</div>
+												</div>
+											</div>
+											<div class="column-goods__amount amount-block">
+												<ul>
+													<li>
+														<p>
+															Замовлення:
+
+														</p>
+														<span>
+															5997 грн
+														</span>
+													</li>
+
+													<li>
+														<p>
+															Знижка за промокодом:
+														</p>
+														<span class="red">
+															–997 грн
+														</span>
+													</li>
+													<li>
+														<p>
+															Доставка:
+														</p>
+														<span>
+															за тарифами перевізника
+														</span>
+													</li>
+													<li class="total">
+														<p>
+															Разом:
+														</p>
+														<span>
+															5000 грн
+														</span>
+													</li>
+												</ul>
+											</div>
+											<div class="column-goods__footer">
+												<div class="row-promo">
+													<i>
+														<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+															<path d="M8.875 0.247559C8.0182 0.247559 7.29551 0.838365 7.07568 1.62939C6.85901 1.55245 6.6281 1.49756 6.375 1.49756C5.34684 1.49756 4.5 2.34439 4.5 3.37256C4.5 3.59472 4.54101 3.80616 4.6123 3.99756H2.625C1.66703 3.99756 0.75 4.64036 0.75 5.61377V14.8838C0.75 15.8575 1.6684 16.4983 2.625 16.5H15.125C16.083 16.5 17 15.8572 17 14.8838V5.61377C17 4.64009 16.0822 3.99756 15.125 3.99756H13.1377C13.209 3.80616 13.25 3.59472 13.25 3.37256C13.25 2.34439 12.4032 1.49756 11.375 1.49756C11.1213 1.49756 10.8913 1.55422 10.6743 1.63184C10.4553 0.839671 9.73262 0.247559 8.875 0.247559ZM8.875 1.49756C9.22684 1.49756 9.5 1.77072 9.5 2.12256C9.5 2.10635 9.46063 2.3219 9.3584 2.55469C9.25616 2.78747 9.10945 3.06183 8.96045 3.31885C8.91832 3.39152 8.91638 3.38457 8.875 3.45312C8.83362 3.38457 8.83168 3.39152 8.78955 3.31885C8.64055 3.06183 8.49384 2.78747 8.3916 2.55469C8.28937 2.3219 8.25 2.10635 8.25 2.12256C8.25 1.77072 8.52316 1.49756 8.875 1.49756ZM6.375 2.74756C6.60662 2.74756 6.8432 2.85513 7.08057 3.04541C7.14615 3.09821 7.22172 3.13724 7.30273 3.16016C7.42605 3.42691 7.56585 3.69685 7.71045 3.94629C7.72661 3.97417 7.72609 3.97019 7.74219 3.99756H6.79004C6.79004 3.99756 6.46552 3.99095 6.17725 3.88281C6.03311 3.82875 5.91713 3.75286 5.85254 3.68018C5.78795 3.60749 5.75 3.5462 5.75 3.37256C5.75 3.02072 6.02316 2.74756 6.375 2.74756ZM11.375 2.74756C11.7268 2.74756 12 3.02072 12 3.37256C12 3.5462 11.9621 3.60749 11.8975 3.68018C11.8329 3.75286 11.7169 3.82875 11.5728 3.88281C11.2845 3.99094 10.96 3.99756 10.96 3.99756H10.0078C10.0239 3.97019 10.0234 3.97417 10.0396 3.94629C10.1765 3.71008 10.3063 3.45434 10.4253 3.20166C10.5023 3.17261 10.5728 3.12864 10.6328 3.07227C10.8813 2.8647 11.1315 2.74756 11.375 2.74756ZM2.625 5.24756H8.83105C8.86275 5.24998 8.89458 5.24998 8.92627 5.24756H15.125C15.5478 5.24756 15.75 5.49245 15.75 5.61377V6.5H2V5.61377C2 5.49467 2.20297 5.24756 2.625 5.24756ZM2 7.75H15.75V14.8838C15.75 15.0029 15.547 15.25 15.125 15.25H2.625C2.2016 15.2492 2 15.0051 2 14.8838V7.75ZM7.05371 9C6.11746 9 5.75 9.60623 5.75 10.355C5.75 11.8812 8.875 14 8.875 14C8.875 14 12 11.9162 12 10.355C12 9.60623 11.6325 9 10.6963 9C9.44879 9 8.875 10.135 8.875 10.665C8.875 10.135 8.27621 9 7.05371 9Z" fill="#C53F55"></path>
+														</svg>
+													</i>
+													<p>
+														Преміальне пакування у подарунок!
+													</p>
+												</div>
+												<button type="submit" class="button button-md button-black flex-1 w-full">Замовлення підтверджую</button>
+												<div class="footer__policy">
+													Розміщуючи замовлення, ви погоджуєтесь з <a href="#">
+														користувацькою
+														угодою
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+
+							</div>
+							<div class="checkout-content__body">
+								Я маю кабінет
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer  footer-checkout">
+			<div class="footer__container">
+				<div class="footer__content sm:grid flex flex-col sm:grid-cols-3 sm:gap-6 gap-4 sm:items-start items-center">
+					<a href="#" class="footer__logo">
+						<svg xmlns="http://www.w3.org/2000/svg" width="126" height="30" viewBox="0 0 126 30" fill="none">
+							<path d="M17.574 6.61549H17.3108L10.268 26.6499L2.59984 6.61549H0L8.88569 29.8341H11.4857L10.3995 26.9815L17.574 6.61549Z" fill="#D4769A"></path>
+							<path d="M19.8682 6.61549V29.8341H22.468V6.61549H19.8682Z" fill="#D4769A"></path>
+							<path d="M42.4848 6.61549H42.2214L35.2444 21.608L27.379 6.61549H24.779L32.809 21.8072V29.8341H35.4091V21.8072L42.4848 6.61549Z" fill="#D4769A"></path>
+							<path d="M64.8169 23.1339C63.1384 26.4841 60.5714 28.4078 57.6425 28.8722C51.8502 29.7346 47.0783 26.7161 45.3011 20.8452C43.5569 15.0074 45.5973 8.30714 51.192 7.07986C55.5362 6.11795 60.4069 8.57249 62.8751 12.8183V8.87102C61.9537 8.07496 58.169 6.2838 54.5489 6.2838C48.0656 6.2838 42.1417 11.591 42.1417 18.1586C42.1417 24.6929 47.7693 30 54.2855 30C60.1106 30 63.2701 26.9815 65.0473 23.2667L64.8169 23.1339Z" fill="#D4769A"></path>
+							<path d="M81.7435 6.61549V15.9693H70.2907V6.61549H67.6909V29.8341H70.2907V16.2015H81.7435V29.8341H84.3433V6.61549H81.7435Z" fill="#D4769A"></path>
+							<path d="M104.977 6.61549V22.0062C104.977 25.7543 102.509 29.3034 98.4611 29.6351C93.6891 30.0332 90.8918 26.7161 90.8918 21.2433V6.61549H88.2918V21.2433C88.2918 27.28 92.4057 30 97.3092 30C101.95 30 105.208 26.6499 105.208 22.0062V6.61549H104.977Z" fill="#D4769A"></path>
+							<path d="M123.236 29.8341H126L117.246 14.344L124.42 6.88085H124.058L111.75 19.7174V6.61549H109.15V29.8341H111.75V20.0491L115.469 16.1682L123.236 29.8341Z" fill="#D4769A"></path>
+							<path d="M100.69 0.0453736C100.69 0.0453736 96.4858 2.95233 97.1276 3.8449C97.4603 4.3075 101.802 1.54612 101.802 1.54612C101.922 1.41949 102.062 1.02943 101.67 0.482281C101.278 -0.0648495 100.854 -0.0369617 100.69 0.0453736Z" fill="#D4769A"></path>
+						</svg>
+					</a>
+					<div class="footer__info">
+						<span>Відділ турботи:</span>
+						<ul>
+							<li>
+								<a href="tel:095 143 9079">095 143 9079</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__payments">
+
+						<img src="img/icons/payments.webp" alt="Image">
+
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240727204442"></script>
+</body>
+
+</html>

@@ -19,7 +19,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-scroll-show>
+		<header class="header header-white" data-scroll-show>
 			<div class="header__container">
 				<div class="header__body flex items-start">
 					<a href="#" class="header__logo">
@@ -114,7 +114,7 @@
 								<div class="top-header__actions">
 									<ul>
 
-										<li class="lg:!inline-block hidden" data-dropdown="">
+										<li class="lg:!inline-block hidden">
 											<a href="#" class="top-header__actions-link top-header__actions-link--user" data-toggle="offcanvas" data-offcanvas-target="#authUser">
 												<i class="_icon-user">
 
@@ -566,763 +566,644 @@
 			</div>
 		</div>
 		<main class="page">
-			<section class="catalog section-margin-b-sm">
-				<div class="catalog__container">
-					<div class="catalog__content">
-						<div class="catalog__header header-catalog">
-							<div class="header-catalog__body">
-								<div class="header-catalog__text">
-									<div class="header-catalog__breadcrumbs breadcrumbs">
-										<div class="breadcrumbs__list">
-											<ul>
-												<li>
-													<a href="#">
-														Головна
+			<section class="main-hero section-margin-b-sm">
+				<div class="main-hero__container">
+					<div class="main-hero__content">
+						<div class="main-hero__slider swiper">
+							<div class="main-hero__wrapper swiper-wrapper">
+								<div class="main-hero__slide swiper-slide slide">
+									<div class="slide__background-image">
+										<!-- <img src="img/hero-main-slider/image.webp" alt="Image"> -->
+										<picture>
+											<source srcset="img/hero-main-slider/banner.webp" media="(max-width: 480px)" />
+											<img src="img/hero-main-slider/image.webp" alt="" />
+										</picture>
 
-
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														Комплекти білизни
-													</a>
-												</li>
-											</ul>
-										</div>
 									</div>
-									<!-- /.header-catalog__breadcrumbs breadcrumbs -->
-									<h1 class="h1 catalog__title">
-										Комплекти білизни <sup class="badge-count">
-											124
-										</sup>
-									</h1>
-									<div class="header-catalog__descr">
-										<p>
-											Ексклюзивні моделі на будь-який смак
+									<div class="slide__content">
+										<h1 class="h1 slide__title text-white">
+											New Collection Summer’24
+										</h1>
+										<p class="slide__descr">
+											Знижка 5% по промокоду LOVE
 										</p>
+										<a href="#" class="button button-md button-white">
+											Перейти в каталог
+										</a>
 									</div>
 								</div>
-								<div class="header-catalog__image">
-									<img src="img/catalog/preview.webp" alt="Image">
+								<div class="main-hero__slide swiper-slide slide">
+									<div class="slide__background-image">
+										<img src="https://picsum.photos/200/300" alt="Image">
+									</div>
+									<div class="slide__content">
+										<h1 class="h1 slide__title text-white">
+											New Collection Summer’24 New Collection Summer’24 New Collection Summer’24 New Collection Summer’24
+										</h1>
+										<p class="slide__descr">
+											Знижка 5% по промокоду LOVE
+										</p>
+										<a href="#" class="button button-md button-white">
+											Перейти в каталог
+										</a>
+									</div>
 								</div>
+								<div class="main-hero__slide swiper-slide slide">
+									<div class="slide__background-image">
+										<img src="https://picsum.photos/1900/800" alt="Image">
+									</div>
+									<div class="slide__content">
+										<h1 class="h1 slide__title text-white">
+											New Collection Summer’24 New Collection Summer’24
+										</h1>
+										<p class="slide__descr">
+											Знижка 5% по промокоду LOVE
+										</p>
+										<a href="#" class="button button-md button-white">
+											Перейти в каталог
+										</a>
+									</div>
+								</div>
+
 							</div>
+							<div class="main-slider__pagination slider-pagination-1">
+								<div class="swiper-pagination"></div>
+							</div>
+
 						</div>
-						<div class="catalog__products">
-							<ul class="catalog__categories categories-list">
+					</div>
+				</div>
+			</section>
+			<!-- /.main-hero -->
+			<section class="bestsellers section-margin-b-sm">
+				<div class="bestsellers__container-max">
+					<div class="bestsellers__container">
+						<div class="bestsellers__content">
+							<div data-tabs class="bestsellers-tabs tabs-type-1">
+								<div class="bestsellers__header">
+									<h2 class="h1 bestsellers__title mb-2">
+										Бестселлери
+									</h2>
+									<nav data-tabs-titles class="bestsellers-tabs__navigation tabs__navigation">
 
-								<li class="categories-list-item current-item">
-									<a href="#">
-										<span class="categories-list-item__image">
-											<img src="img/komplekty/01.webp" alt="Image">
-										</span>
-										<div class="categories-list-item__content">
-											Всі комплекти
-										</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/02.webp" alt="Komplekt 02"></span>
-										<div class="categories-list-item__content">Комплект Софія</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/03.webp" alt="Komplekt 03"></span>
-										<div class="categories-list-item__content">Комплекти без&nbsp;кісточок</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/04.webp" alt="Komplekt 04"></span>
-										<div class="categories-list-item__content">Комплекти з&nbsp;бавовни</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/05.webp" alt="Komplekt 05"></span>
-										<div class="categories-list-item__content">Комплекти з&nbsp;вишивкою</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/06.webp" alt="Komplekt 06"></span>
-										<div class="categories-list-item__content">Комплекти з&nbsp;доступом</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/07.webp" alt="Komplekt 07"></span>
-										<div class="categories-list-item__content">Комплекти з&nbsp;паралоновою чашкою</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/08.webp" alt="Komplekt 08"></span>
-										<div class="categories-list-item__content">Комплекти з&nbsp;сітки</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/09.webp" alt="Komplekt 09"></span>
-										<div class="categories-list-item__content">Корсети</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/010.webp" alt="Komplekt 010"></span>
-										<div class="categories-list-item__content">Мереживні комплекти</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/011.webp" alt="Komplekt 011"></span>
-										<div class="categories-list-item__content">Трусики</div>
-									</a>
-								</li>
-								<li class="categories-list-item">
-									<a href="#">
-										<span class="categories-list-item__image"><img src="img/komplekty/012.webp" alt="Komplekt 011"></span>
-										<div class="categories-list-item__content">Шовкові комплекти</div>
-									</a>
-								</li>
+										<button type="button" class="bestsellers-tabs__title tabs__title _tab-active">Комплекти</button>
+										<button type="button" class="bestsellers-tabs__title tabs__title">Білизна</button>
+										<button type="button" class="bestsellers-tabs__title tabs__title">Купальники</button>
+										<button type="button" class="bestsellers-tabs__title tabs__title">Домашній одяг</button>
+										<button type="button" class="bestsellers-tabs__title tabs__title">Одяг для вулиці</button>
+									</nav>
+								</div>
+								<div data-tabs-body class="bestsellers-tabs__content tabs__content">
+									<div class="bestsellers-tabs__body tabs__body">
+										<div class="bestsellers__slider swiper">
+											<div class="bestsellers__wrapper swiper-wrapper">
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-2.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-3.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-4.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
 
-							</ul>
-						</div>
-						<div class="catalog__body section-margin-b-sm">
-							<div class="catalog__filter filter-catalog md:mb-8 mb-5">
-								<div class="flex items-center gap-2">
-									<div class="dropdown dropdown-md dropdown--select" data-dropdown="">
-										<button class="dropdown-toggle button-filter _icon-arrow-bottom" type="button" data-toggle="offcanvas" data-offcanvas-target="#filterMore" aria-expanded="false">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
 
-											<span>Фільтр</span>
-										</button>
-									</div>
-									<div class="items-center gap-2 md:!flex hidden">
-										<div class="dropdown dropdown-md dropdown--select dropdown--color" data-dropdown="">
-											<button class="dropdown-toggle _icon-arrow-bottom" type="button" data-toggle="dropdown" aria-expanded="false">
-												<span>Колiр</span>
-											</button>
-											<div class="dropdown-menu" data-dropdown-menu="">
-												<ul>
-													<li>
-														<div class="checkbox">
-															<input id="c_1" data-tag="color-1" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_1" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #000;"></span>Чорний</p>
-															</label>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
 														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_2" data-tag="color-2" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_2" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #F2EAD8;"></span>Бежевий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_3" data-tag="color-3" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_3" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #CCCE69;"></span>Хакі</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_4" data-tag="color-4" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_4" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #ECE7E3;"></span>Айворі</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_5" data-tag="color-5" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_5" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFEF5F;"></span>Лимон</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_6" data-tag="color-6" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_6" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #982849;"></span>Червоний</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_7" data-tag="color-7" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_7" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #AADAEE;"></span>Океан</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_8" data-tag="color-8" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_8" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFE55F;"></span>Жовтий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_9" data-tag="color-9" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_9" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #0F53C3;"></span>Синій</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_10" data-tag="color-10" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_10" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFC0CB;"></span>Рожевий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_11" data-tag="color-11" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_11" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #C59A84;"></span>Коричневий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_12" data-tag="color-12" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_12" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #fff;"></span>Білий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_1" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_1" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #000;"></span>Чорний</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_2" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_2" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #F2EAD8;"></span>Бежевий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_3" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_3" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #CCCE69;"></span>Хакі</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_4" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_4" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #ECE7E3;"></span>Айворі</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_5" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_5" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFEF5F;"></span>Лимон</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_6" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_6" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #982849;"></span>Червоний</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_7" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_7" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #AADAEE;"></span>Океан</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_8" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_8" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFE55F;"></span>Жовтий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_9" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_9" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #0F53C3;"></span>Синій</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_10" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_10" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #FFC0CB;"></span>Рожевий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_11" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_11" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #C59A84;"></span>Коричневий</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="c_12" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="colors-group">
-															<label for="c_12" class="checkbox__label">
-																<p class="checkbox__text"><span class="color" style="background-color: #fff;"></span>Білий</p>
-															</label>
-														</div>
-													</li>
-												</ul>
-												<div class="dropdown-menu__footer flex items-center gap-2 flex-col">
-													<a href="#" class="button button-md button-black w-full">
-														Застосовувати
-													</a>
-													<a href="#" class="link-sm link-secondary ">
-														Скинувши
-													</a>
+													</div>
+													<!-- /.product-card -->
 												</div>
-											</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-2.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-3.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+													п
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
+																	<img src="img/product-card/image-4.webp" alt="Image">
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
+																<div class="product-card__descr">
+																	Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива
+																</div>
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
+												</div>
+												<div class="bestsellers__slide swiper-slide">
+													<div class="product-card">
+														<div class="product-card__body">
+															<div class="product-card__header">
+																<a href="#" class="product-card__image">
 
-										</div>
-										<div class="dropdown dropdown-md dropdown--select dropdown--size" data-dropdown="">
-											<button class="dropdown-toggle _icon-arrow-bottom" type="button" data-toggle="dropdown" aria-expanded="false">
-												<span>Розмiр</span>
-											</button>
-											<div class="dropdown-menu" data-dropdown-menu="">
-												<ul>
-													<li>
-														<div class="checkbox">
-															<input id="s_1" data-tag="size-1" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_1" class="checkbox__label">
-																<p class="checkbox__text">XS</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="s_2" data-tag="size-2" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_2" class="checkbox__label">
-																<p class="checkbox__text">S</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="s_3" data-tag="size-3" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_3" class="checkbox__label">
-																<p class="checkbox__text">M</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="s_4" data-tag="size-4" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_4" class="checkbox__label">
-																<p class="checkbox__text">L</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="s_5" data-tag="size-5" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_5" class="checkbox__label">
-																<p class="checkbox__text">XL</p>
-															</label>
-														</div>
-													</li>
-													<li>
-														<div class="checkbox">
-															<input id="s_6" data-tag="size-6" data-group="size-group" class="checkbox__input sync-checkbox" type="checkbox" value="1" name="form[]" data-group="size-group">
-															<label for="s_6" class="checkbox__label">
-																<p class="checkbox__text">XXL</p>
-															</label>
-														</div>
-													</li>
-												</ul>
-												<div class="dropdown-menu__footer flex items-center gap-2 flex-col">
-													<a href="#" class="button button-md button-black w-full">
-														Застосовувати
-													</a>
-													<a href="#" class="link-sm link-secondary ">
-														Скинувши
-													</a>
-												</div>
-											</div>
+																</a>
+																<div class="product-card__stickers">
+																	<div class="sticker-best">
+																		Best
+																	</div>
+																	<button type="button" class="button-favorite">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																			<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+																		</svg>
+																	</button>
+																</div>
+															</div>
+															<div class="product-card__content">
+																<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
 
-										</div>
-									</div>
-								</div>
-								<div class="flex items-center gap-2">
-									<select name="form[]" data-class-modif="sort" data-pseudo-label="Статистика">
-										<option value="1" selected>по популярності</option>
-										<option value="2">по новизне</option>
-										<option value="3">по возрастанию цены</option>
-										<option value="4">по уменьшению цены</option>
-									</select>
-								</div>
-							</div>
-							<div class="catalog__list">
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<img src="img/product-card/image.webp" alt="Image">
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
+																<div class="product-card__price price-box price-box-md">
+																	<div class="price-new">
+																		1699 грн
+																	</div>
+																	<div class="price-old">
+																		1999 грн
+																	</div>
+																</div>
+																<div class="product-card__colors">
+																	<a href="#" class="active">
+																		<span style="background-color: #EAEAEA;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFBDF0;"></span>
+																	</a>
+																	<a href="#">
+																		<span style="background-color: #FFE1A7;"></span>
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+													<!-- /.product-card -->
 												</div>
 											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
+											<div class="scrollbar-type-1">
+												<div class="swiper-scrollbar"></div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<!-- /.product-card -->
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<img src="img/product-card/image.webp" alt="Image">
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
-												</div>
-											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
-											</div>
-										</div>
+									<div class="bestsellers-tabs__body tabs__body">
+										Вміст другого таба
 									</div>
-								</div>
-								<!-- /.product-card -->
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<img src="img/product-card/image.webp" alt="Image">
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
-												</div>
-											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
-											</div>
-										</div>
+									<div class="bestsellers-tabs__body tabs__body">
+										Вміст третього таба
 									</div>
-								</div>
-								<!-- /.product-card -->
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<img src="img/product-card/image.webp" alt="Image">
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
-												</div>
-											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
-											</div>
-										</div>
+									<div class="bestsellers-tabs__body tabs__body">
+										Вміст 4 таба
 									</div>
-								</div>
-								<!-- /.product-card -->
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<img src="img/product-card/image.webp" alt="Image">
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
-												</div>
-											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
-											</div>
-										</div>
+									<div class="bestsellers-tabs__body tabs__body">
+										Вміст 5 таба
 									</div>
-								</div>
-								<!-- /.product-card -->
-								<div class="product-card">
-									<div class="product-card__body">
-										<div class="product-card__header">
-											<a href="#" class="product-card__image">
-												<!-- <img src="img/product-card/image.webp" alt="Image"> -->
-											</a>
-											<div class="product-card__stickers">
-												<div class="sticker-best">
-													Best
-												</div>
-												<button type="button" class="button-favorite">
-													<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-														<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
-													</svg>
-												</button>
-											</div>
-										</div>
-										<div class="product-card__content">
-											<a href="#" class="product-card__title"> Amelia</a>
-											<div class="product-card__descr">
-												Корсетний бюстик та трусики з мережива
-											</div>
-											<div class="product-card__price price-box price-box-md">
-												<div class="price-new">
-													1699 грн
-												</div>
-												<div class="price-old">
-													1999 грн
-												</div>
-											</div>
-											<div class="product-card__colors">
-												<a href="#" class="active">
-													<span style="background-color: #EAEAEA;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFBDF0;"></span>
-												</a>
-												<a href="#">
-													<span style="background-color: #FFE1A7;"></span>
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- /.product-card -->
-							</div>
-							<div class="catalog__actions">
-								<div class="pagging pagging-type-1">
-									<a href="" class="pagging__arrow">
-										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-											<path d="M4.76562 4.03125L5.48438 4.71875L3.28906 7.00781H14.5V8.00781H3.30859L5.48438 10.2812L4.76562 10.9688L1.43359 7.5L4.76562 4.03125Z" fill="black" />
-										</svg>
-									</a>
-									<ul class="pagging__list">
-										<li>
-											<a href="" class="pagging__item _active">1</a>
-										</li>
-										<li>
-											<a href="" class="pagging__item">2</a>
-										</li>
-										<li>
-											<a href="" class="pagging__item">3</a>
-										</li>
-										<li>
-											<a href="" class="pagging__item">...</a>
-										</li>
-										<li>
-											<a href="" class="pagging__item">12</a>
-										</li>
-									</ul>
-									<a href="" class="pagging__arrow">
-										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
-											<path d="M10.2344 0.03125L9.51562 0.71875L11.7109 3.00781H0.5V4.00781H11.6914L9.51562 6.28125L10.2344 6.96875L13.5664 3.5L10.2344 0.03125Z" fill="black" />
-										</svg>
-									</a>
-								</div>
-								<div class="button-to-top">
-									<button type="button" class="button _icon-arrow-big-top"><span>Нагору</span></button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- /.catalog -->
-			<section class="reviewed-products section-margin-b-sm">
-				<div class="reviewed-products__container">
-					<div class="reviewed-products__content">
-						<div class="reviewed-products__block products-block">
-							<div class="products-block__body">
-								<h1 class="h1 products-block__title">
-									Переглянуті товари
-								</h1>
-								<div class="items-center gap-2 md:!flex hidden">
-									<button type="button" class="swiper-button-prev slider-button-1 md:mt-4">
-										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
-											<path d="M4.26562 0.03125L4.98438 0.71875L2.78906 3.00781H14V4.00781H2.80859L4.98438 6.28125L4.26562 6.96875L0.933594 3.5L4.26562 0.03125Z" fill="black" />
-										</svg>
-									</button>
-									<button type="button" class="swiper-button-next slider-button-1 md:mt-4">
-										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
-											<path d="M9.73438 0.03125L9.01562 0.71875L11.2109 3.00781H0V4.00781H11.1914L9.01562 6.28125L9.73438 6.96875L13.0664 3.5L9.73438 0.03125Z" fill="black" />
-										</svg>
-									</button>
-								</div>
+			<!-- /.bestsellers -->
+			<section class="categories-section section-margin-b-sm">
+				<div class="categories-section__container">
+					<div class="categories-section__content">
+						<div class="categories-section__row categories-row">
+							<div class="categories-row__content">
+								<h2 class="h1 categories-row__title">
+									Комплекти білизни
+								</h2>
+								<p>
+									Ексклюзивні моделі на будь-який смак
+								</p>
+								<a href="#" class="button button-md button-black">Перейти в каталог</a>
+							</div>
+							<div class="categories-row__image">
+								<img src="img/categories/image.webp" alt="Image">
 							</div>
 						</div>
-						<div class="reviewed-products__wrap">
-							<div class="reviewed-products__slider swiper">
-								<div class="reviewed-products__wrapper swiper-wrapper">
-									<div class="reviewed-products__slide swiper-slide">
+						<div class="categories-section__row categories-row">
+
+							<div class="categories-row__image">
+								<img src="img/categories/image-2.webp" alt="Image">
+							</div>
+							<div class="categories-row__content">
+								<h2 class="h1 categories-row__title">
+									Піжами
+
+								</h2>
+								<p>
+									Неперевершений комфорт та елегантність навіть вдома
+								</p>
+								<a href="#" class="button button-md button-black">Перейти в каталог</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.categories-section -->
+			<section class="new-arrivals section-margin-b-sm">
+				<div class="new-arrivals__container">
+					<div class="new-arrivals__content">
+						<div class="new-arrivals__info-block">
+							<h2 class="h1 new-arrivals__title">
+								Відкрий для себе <br>
+								новинки цього сезону
+
+							</h2>
+							<p>
+								Знижка 5% по промокоду LOVE
+							</p>
+							<a href="#" class="button button-md button-black">Усі новинки</a>
+						</div>
+						<div class="new-arrivals__wrap">
+							<div class="new-arrivals__slider swiper">
+								<div class="new-arrivals__wrapper swiper-wrapper">
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
@@ -1369,7 +1250,193 @@
 										</div>
 										<!-- /.product-card -->
 									</div>
-									<div class="reviewed-products__slide swiper-slide">
+									<div class="new-arrivals__slide swiper-slide">
+										<div class="product-card">
+											<div class="product-card__body">
+												<div class="product-card__header">
+													<a href="#" class="product-card__image">
+														<img src="img/product-card/image-2.webp" alt="Image">
+													</a>
+													<div class="product-card__stickers">
+														<div class="sticker-best">
+															Best
+														</div>
+														<button type="button" class="button-favorite">
+															<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="product-card__content">
+													<a href="#" class="product-card__title"> Amelia</a>
+													<div class="product-card__descr">
+														Корсетний бюстик та трусики з мережива
+													</div>
+													<div class="product-card__price price-box price-box-md">
+														<div class="price-new">
+															1699 грн
+														</div>
+														<div class="price-old">
+															1999 грн
+														</div>
+													</div>
+													<div class="product-card__colors">
+														<a href="#" class="active">
+															<span style="background-color: #EAEAEA;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFBDF0;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFE1A7;"></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.product-card -->
+									</div>
+									<div class="new-arrivals__slide swiper-slide">
+										<div class="product-card">
+											<div class="product-card__body">
+												<div class="product-card__header">
+													<a href="#" class="product-card__image">
+														<img src="img/product-card/image-3.webp" alt="Image">
+													</a>
+													<div class="product-card__stickers">
+														<div class="sticker-best">
+															Best
+														</div>
+														<button type="button" class="button-favorite">
+															<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="product-card__content">
+													<a href="#" class="product-card__title"> Amelia</a>
+													<div class="product-card__descr">
+														Корсетний бюстик та трусики з мережива
+													</div>
+													<div class="product-card__price price-box price-box-md">
+														<div class="price-new">
+															1699 грн
+														</div>
+														<div class="price-old">
+															1999 грн
+														</div>
+													</div>
+													<div class="product-card__colors">
+														<a href="#" class="active">
+															<span style="background-color: #EAEAEA;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFBDF0;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFE1A7;"></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.product-card -->
+									</div>
+									<div class="new-arrivals__slide swiper-slide">
+										<div class="product-card">
+											<div class="product-card__body">
+												<div class="product-card__header">
+													<a href="#" class="product-card__image">
+														<img src="img/product-card/image-4.webp" alt="Image">
+													</a>
+													<div class="product-card__stickers">
+														<div class="sticker-best">
+															Best
+														</div>
+														<button type="button" class="button-favorite">
+															<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="product-card__content">
+													<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
+													<div class="product-card__descr">
+														Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива
+													</div>
+													<div class="product-card__price price-box price-box-md">
+														<div class="price-new">
+															1699 грн
+														</div>
+														<div class="price-old">
+															1999 грн
+														</div>
+													</div>
+													<div class="product-card__colors">
+														<a href="#" class="active">
+															<span style="background-color: #EAEAEA;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFBDF0;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFE1A7;"></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.product-card -->
+									</div>
+									<div class="new-arrivals__slide swiper-slide">
+										<div class="product-card">
+											<div class="product-card__body">
+												<div class="product-card__header">
+													<a href="#" class="product-card__image">
+
+													</a>
+													<div class="product-card__stickers">
+														<div class="sticker-best">
+															Best
+														</div>
+														<button type="button" class="button-favorite">
+															<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+																<path d="M6.25 2.5C3.69907 2.5 1.67614 4.38408 1.25732 6.89697L1.25 6.94824V7.5C1.25 10.3385 3.43058 12.912 5.5127 14.834C7.59481 16.7559 9.67285 18.0322 9.67285 18.0322L10 18.2349L10.3271 18.0322C10.3271 18.0322 12.4052 16.7559 14.4873 14.834C16.5694 12.912 18.75 10.3385 18.75 7.5V6.96289L18.7451 6.92627C18.4574 4.48067 16.3241 2.5 13.75 2.5C12.1807 2.5 10.9042 3.30841 10 4.39941C9.09581 3.30841 7.81933 2.5 6.25 2.5ZM6.25 3.75C7.65064 3.75 8.82008 4.49993 9.46289 5.57129L10 6.46484L10.5371 5.57129C11.1799 4.49993 12.3494 3.75 13.75 3.75C15.672 3.75 17.2824 5.26349 17.5 7.06299V7.5C17.5 9.66146 15.6181 12.088 13.6377 13.916C11.8206 15.5933 10.2881 16.535 10 16.7163C9.71191 16.535 8.17937 15.5933 6.3623 13.916C4.38192 12.088 2.5 9.66146 2.5 7.5V7.0874C2.83703 5.10996 4.30676 3.75 6.25 3.75Z" fill="white" />
+															</svg>
+														</button>
+													</div>
+												</div>
+												<div class="product-card__content">
+													<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
+
+													<div class="product-card__price price-box price-box-md">
+														<div class="price-new">
+															1699 грн
+														</div>
+														<div class="price-old">
+															1999 грн
+														</div>
+													</div>
+													<div class="product-card__colors">
+														<a href="#" class="active">
+															<span style="background-color: #EAEAEA;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFBDF0;"></span>
+														</a>
+														<a href="#">
+															<span style="background-color: #FFE1A7;"></span>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- /.product-card -->
+									</div>
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
@@ -1416,12 +1483,12 @@
 										</div>
 										<!-- /.product-card -->
 									</div>
-									<div class="reviewed-products__slide swiper-slide">
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
 													<a href="#" class="product-card__image">
-														<img src="img/product-card/image.webp" alt="Image">
+														<img src="img/product-card/image-2.webp" alt="Image">
 													</a>
 													<div class="product-card__stickers">
 														<div class="sticker-best">
@@ -1463,12 +1530,12 @@
 										</div>
 										<!-- /.product-card -->
 									</div>
-									<div class="reviewed-products__slide swiper-slide">
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
 													<a href="#" class="product-card__image">
-														<img src="img/product-card/image.webp" alt="Image">
+														<img src="img/product-card/image-3.webp" alt="Image">
 													</a>
 													<div class="product-card__stickers">
 														<div class="sticker-best">
@@ -1510,12 +1577,12 @@
 										</div>
 										<!-- /.product-card -->
 									</div>
-									<div class="reviewed-products__slide swiper-slide">
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
 													<a href="#" class="product-card__image">
-														<img src="img/product-card/image.webp" alt="Image">
+														<img src="img/product-card/image-4.webp" alt="Image">
 													</a>
 													<div class="product-card__stickers">
 														<div class="sticker-best">
@@ -1529,9 +1596,9 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<a href="#" class="product-card__title"> Amelia</a>
+													<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
 													<div class="product-card__descr">
-														Корсетний бюстик та трусики з мережива
+														Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива Корсетний бюстик та трусики з мережива
 													</div>
 													<div class="product-card__price price-box price-box-md">
 														<div class="price-new">
@@ -1557,12 +1624,12 @@
 										</div>
 										<!-- /.product-card -->
 									</div>
-									<div class="reviewed-products__slide swiper-slide">
+									<div class="new-arrivals__slide swiper-slide">
 										<div class="product-card">
 											<div class="product-card__body">
 												<div class="product-card__header">
 													<a href="#" class="product-card__image">
-														<img src="img/product-card/image.webp" alt="Image">
+
 													</a>
 													<div class="product-card__stickers">
 														<div class="sticker-best">
@@ -1576,10 +1643,8 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<a href="#" class="product-card__title"> Amelia</a>
-													<div class="product-card__descr">
-														Корсетний бюстик та трусики з мережива
-													</div>
+													<a href="#" class="product-card__title"> Amelia Amelia AmeliaAmelia Amelia Amelia</a>
+
 													<div class="product-card__price price-box price-box-md">
 														<div class="price-new">
 															1699 грн
@@ -1605,18 +1670,233 @@
 										<!-- /.product-card -->
 									</div>
 								</div>
-
+								<button type="button" class="swiper-button-prev slider-button-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
+										<path d="M4.26562 0.03125L4.98438 0.71875L2.78906 3.00781H14V4.00781H2.80859L4.98438 6.28125L4.26562 6.96875L0.933594 3.5L4.26562 0.03125Z" fill="black" />
+									</svg>
+								</button>
+								<button type="button" class="swiper-button-next slider-button-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="7" viewBox="0 0 14 7" fill="none">
+										<path d="M9.73438 0.03125L9.01562 0.71875L11.2109 3.00781H0V4.00781H11.1914L9.01562 6.28125L9.73438 6.96875L13.0664 3.5L9.73438 0.03125Z" fill="black" />
+									</svg>
+								</button>
 								<div class="scrollbar-type-1">
 									<div class="swiper-scrollbar"></div>
 								</div>
 							</div>
+							<a href="#" class="button button-md button-black button-all-news w-full mt-3">Усі новинки</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- /.reviewed-products -->
-		</main>
+			<!-- /.new-arrivals -->
+			<section class="words section-margin-b-sm">
+				<div class="words__container">
+					<div class="words__content">
 
+						<div class="scroller" data-direction="left" data-speed="fast">
+							<div class="scroller__inner">
+								<p>
+									не чекай особливого випадку бути красивою
+								</p>
+								<p>
+									впевненість це стан душі
+								</p>
+								<p>
+									жінка яка надихає
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.words -->
+			<section class="categories-section section-margin-b-sm">
+				<div class="categories-section__container">
+					<div class="categories-section__content">
+						<div class="categories-section__list">
+							<a href="#" class="categories-section__item item">
+								<div class="item__body">
+									<div class="item__image">
+										<img src="img/categories/cat-1.webp" alt="Image">
+									</div>
+									<div class="item__content">
+										<p>Домашній одяг</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories-section__item item">
+								<div class="item__body">
+									<div class="item__image">
+										<img src="img/categories/cat-2.webp" alt="Image">
+									</div>
+									<div class="item__content">
+										<p>Купальники</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories-section__item item">
+								<div class="item__body">
+									<div class="item__image">
+										<img src="img/categories/cat-3.webp" alt="Image">
+									</div>
+									<div class="item__content">
+										<p>Боді</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="categories-section__item item">
+								<div class="item__body">
+									<div class="item__image">
+										<img src="img/categories/cat-4.webp" alt="Image">
+									</div>
+									<div class="item__content">
+										<p>Костюми</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.categories-section -->
+			<section class="about section-margin-b-sm">
+				<div class="about__container">
+					<div class="about__content">
+						<div class="about__left left-about">
+							<h2 class="h1 about__title">
+								<span>Viychuk Lingerie</span> —
+								це український бренд жіночого одягу та білизни
+
+							</h2>
+							<p>
+								Viychuk поєднує неперевершену якість матеріалів та демократичну ціну. Різноманіття вишуканих моделей дозволить проявити індивідуальність та любов до себе кожній жінці.
+							</p>
+						</div>
+						<div class="about__right right-about">
+							<div class="right-about__column">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+										<path d="M29.7675 2.01367C29.4936 2.03441 29.2226 2.10643 28.9667 2.23437L24.9999 4.12695L20.9628 2.19921L20.9062 2.18164C19.9999 1.87955 18.7554 2.06991 18.0937 3.0625L15.5058 6.54101L11.0097 6.63281L10.9413 6.64453C10.0315 6.79617 9.01112 7.47633 8.84172 8.66211L8.84367 8.64062L8.12297 12.9766L4.06047 15.1914L3.99407 15.2441C3.21123 15.8704 2.71861 16.9158 3.08196 18.0059L3.08391 18.0117L4.53117 22.1758L2.19328 25.8633C1.55911 26.8145 1.74162 28.1108 2.51555 28.8848L2.51946 28.8906L5.69719 31.9766L5.33391 36.4219L5.34172 36.3633C5.16685 37.5874 5.99592 38.5853 6.99406 38.918L7.0175 38.9258L11.2909 40.1094L13.0195 44.2051L13.0331 44.2324C13.5449 45.2559 14.6298 45.7264 15.6601 45.5547L15.6777 45.5527L20.0448 44.6426L23.5234 47.4805L23.5624 47.5059C23.9864 47.7885 24.4847 47.9687 24.9999 47.9687C25.5151 47.9687 26.056 47.813 26.4843 47.3848L26.412 47.4512L29.8534 44.6426L34.203 45.5488L34.1347 45.5312C35.3032 45.8651 36.4131 45.1404 36.8671 44.2324L36.8808 44.2051L38.6093 40.1094L42.8827 38.9258L42.9062 38.918C43.9043 38.5853 44.7334 37.5874 44.5585 36.3633L44.5644 36.4219L44.203 31.9766L47.3749 28.8945L47.3046 28.957C48.2473 28.2029 48.4202 26.8495 47.6562 25.8945L47.7187 25.9805L45.3613 22.2656L46.7265 18.084L46.7304 18.0664C47.0241 17.0384 46.6947 15.7654 45.6327 15.2344L41.8788 13.0879L41.1562 8.74023L41.1581 8.76367C41.0033 7.68016 40.0615 6.73242 38.9003 6.73242H38.9394L34.5019 6.55078L31.9062 3.0625C31.5891 2.58686 31.1095 2.25192 30.582 2.09961C30.3182 2.02345 30.0414 1.99292 29.7675 2.01367ZM29.957 3.92187C30.0725 3.89895 30.1705 3.95016 30.2948 4.13671L30.3085 4.1582L33.498 8.44921L38.8808 8.66796H38.9003C39.1391 8.66796 39.1969 8.72061 39.2421 9.03711V9.04882L40.121 14.3125L44.7421 16.9551L44.7675 16.9668C44.905 17.0356 44.9738 17.1621 44.8691 17.5312V17.5332L43.2382 22.5332L46.1113 27.0644L46.1445 27.1055C46.1805 27.1505 46.153 27.3975 46.0956 27.4434L46.0585 27.4727L46.0253 27.5059L42.1972 31.2227L42.6366 36.6074L42.6405 36.6367C42.6656 36.8117 42.4954 37.0118 42.2948 37.0801L37.1894 38.4922L35.1308 43.3691C34.986 43.6576 34.8963 43.7338 34.6659 43.668L34.6327 43.6582L29.3456 42.5586L25.1503 45.9805L25.1152 46.0156C25.1434 45.9873 25.0847 46.0312 24.9999 46.0312C24.9192 46.0312 24.8152 46.0035 24.6542 45.9004L20.5546 42.5586L15.3398 43.6445C15.1713 43.6726 14.8602 43.5438 14.7695 43.3691L12.7089 38.4922L7.60344 37.0781C7.40359 37.0093 7.2328 36.8113 7.25774 36.6367L7.2636 36.6074L7.70305 31.2227L3.88469 27.5156C3.65862 27.2896 3.64074 27.1862 3.80656 26.9375L3.81242 26.9277L6.66789 22.4238L4.91789 17.3945V17.3926C4.88335 17.2858 4.9943 16.9583 5.19524 16.7793L9.87688 14.2246L10.7577 8.94726V8.9375C10.7875 8.72937 10.9703 8.61732 11.246 8.5664L16.4941 8.45898L19.6913 4.1582L19.705 4.13671C19.8405 3.93341 19.9986 3.92969 20.2812 4.02148L24.9999 6.27343L29.8241 3.9707L29.8339 3.96679C29.878 3.94473 29.9184 3.92951 29.957 3.92187ZM19.4999 14C17.8999 14 16.6991 14.9004 16.1991 16.4004C15.9991 17.0004 15.9999 17.3 15.9999 19.5C15.9999 21.7 16.0991 22.0996 16.1991 22.5996C16.6991 23.9996 17.8999 25 19.4999 25C21.0999 25 22.3007 24.0996 22.8007 22.5996C23.0007 21.9996 22.9999 21.7 22.9999 19.5C22.9999 17.3 22.9007 16.9004 22.8007 16.4004C22.3007 15.0004 21.0999 14 19.4999 14ZM30.4003 14C30.1003 14 30.0003 14.1008 29.9003 14.3008L18.0995 35.6992C17.9995 35.7992 18.1007 36 18.3007 36H19.6991C19.8991 36 19.9995 35.8992 20.0995 35.6992L31.9999 14.3008C31.9999 14.2008 32.0007 14 31.8007 14H30.4003ZM19.4999 16.0996C20.1999 16.0996 20.7003 16.4996 20.9003 17.0996C21.0003 17.3996 20.9999 17.6996 20.9999 19.5996C20.9999 21.3996 20.9003 21.7 20.9003 22C20.7003 22.7 20.1999 23 19.4999 23C18.7999 23 18.2995 22.6 18.0995 22C17.9995 21.7 17.9999 21.3996 17.9999 19.5996C17.9999 17.6996 18.0995 17.3996 18.0995 17.0996C18.2995 16.3996 18.7999 16.0996 19.4999 16.0996ZM30.4999 25C28.8999 25 27.6991 25.9004 27.1991 27.4004C26.9991 28.0004 26.9999 28.3 26.9999 30.5C26.9999 32.7 27.0991 33.0996 27.1991 33.5996C27.6991 34.9996 28.8999 36 30.4999 36C32.0999 36 33.3007 35.0996 33.8007 33.5996C34.0007 32.9996 33.9999 32.7 33.9999 30.5C33.9999 28.3 33.9007 27.9004 33.8007 27.4004C33.3007 26.0004 32.0999 25 30.4999 25ZM30.4999 27.0996C31.1999 27.0996 31.7003 27.4996 31.9003 28.0996C32.0003 28.3996 31.9999 28.6996 31.9999 30.5996C31.9999 32.3996 31.9003 32.7 31.9003 33C31.7003 33.7 31.1999 34 30.4999 34C29.7999 34 29.2995 33.6 29.0995 33C28.9995 32.7 28.9999 32.3996 28.9999 30.5996C28.9999 28.6996 29.0995 28.3996 29.0995 28.0996C29.2995 27.3996 29.7999 27.0996 30.4999 27.0996Z" fill="black" />
+									</svg>
+								</i>
+								<span>
+									Система знижок
+									та программа лояльності
+								</span>
+							</div>
+							<div class="right-about__column">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+										<path d="M14.0293 3.98637C13.7814 3.97955 13.5397 4.06511 13.3513 4.22645C13.1629 4.38778 13.0412 4.61337 13.0098 4.85941C12.5528 8.05808 10.6679 10.5233 8.75195 13.9473C6.83601 17.3714 5 21.7266 5 28.4668C5 31.747 6.02064 36.6202 7.02734 40.7657C8.03405 44.9112 9.04102 48.2852 9.04102 48.2852C9.11664 48.5395 9.29021 48.7534 9.52353 48.8798C9.63906 48.9424 9.76578 48.9816 9.89646 48.9951C10.0271 49.0087 10.1592 48.9965 10.2852 48.959C10.4111 48.9216 10.5284 48.8597 10.6304 48.7769C10.7325 48.6941 10.8172 48.592 10.8797 48.4765C10.9423 48.361 10.9815 48.2343 10.9951 48.1036C11.0087 47.9729 10.9964 47.8408 10.959 47.7149C10.959 47.7149 9.96595 44.3833 8.97266 40.293C7.97936 36.2028 7 31.3116 7 28.4668C7 25.5076 7.36742 23.102 7.93359 21.0293C15.2632 23.2687 19.2451 25.7413 24.002 31.377C24.0054 36.9276 24.0799 42.0921 24 47.9864C23.9977 48.118 24.0215 48.2488 24.0698 48.3712C24.1182 48.4936 24.1903 48.6053 24.2819 48.6998C24.3735 48.7943 24.4829 48.8698 24.6038 48.922C24.7247 48.9741 24.8547 49.0019 24.9863 49.0037C25.1179 49.0055 25.2486 48.9813 25.3708 48.9324C25.4931 48.8836 25.6045 48.8111 25.6987 48.7192C25.7929 48.6272 25.868 48.5175 25.9197 48.3965C25.9714 48.2754 25.9987 48.1453 26 48.0137C26.0804 42.0872 26.0055 36.9112 26.002 31.3789C30.7271 25.8074 35.203 23.5037 42.041 21.0508C42.6233 23.0721 43 25.453 43 28.4668C43 31.3116 42.0206 36.2028 41.0273 40.293C40.034 44.3833 39.041 47.7149 39.041 47.7149C38.9654 47.9692 38.9939 48.2432 39.1203 48.4765C39.2466 48.7098 39.4605 48.8834 39.7148 48.959C39.9692 49.0346 40.2431 49.0061 40.4765 48.8798C40.7098 48.7534 40.8834 48.5395 40.959 48.2852C40.959 48.2852 41.966 44.9112 42.9727 40.7657C43.9794 36.6202 45 31.747 45 28.4668C45 21.7266 43.1538 17.6009 41.2402 14.3086C39.3266 11.0163 37.4581 8.60199 36.9922 4.87504C36.9642 4.62374 36.8421 4.39236 36.6504 4.22748C36.4587 4.06259 36.2116 3.97644 35.959 3.98637C35.8193 3.99184 35.6823 4.02655 35.5568 4.08824C35.4314 4.14994 35.3202 4.23725 35.2306 4.34454C35.141 4.45184 35.0748 4.57674 35.0365 4.71117C34.9981 4.84561 34.9883 4.9866 35.0078 5.12504C35.5288 9.29329 37.5687 12.0221 39.373 15.086C29.8276 16.7512 20.1565 16.7411 10.3535 15.1914C10.4019 15.1036 10.4494 15.0109 10.498 14.9239C12.3321 11.6462 14.4472 8.942 14.9902 5.14066C15.0122 5.00025 15.004 4.85678 14.9661 4.71979C14.9283 4.5828 14.8617 4.45546 14.7708 4.34623C14.6798 4.23701 14.5667 4.14842 14.4388 4.08637C14.311 4.02432 14.1714 3.99022 14.0293 3.98637ZM40.3867 16.9219C40.7494 17.6252 41.0978 18.3575 41.4102 19.1543C34.6717 21.5727 29.8084 24.1252 25.0098 29.5547C20.2724 24.123 15.8008 21.3501 8.5332 19.1231C8.7992 18.3977 9.09068 17.72 9.39648 17.0704C19.7767 18.7806 30.0475 18.8078 40.1777 16.9844C40.2495 16.9713 40.3195 16.9503 40.3867 16.9219Z" fill="black" />
+									</svg>
+								</i>
+								<span>
+									Можливість підбору розмірів різних верху та низу,
+									та навіть індивідуальний пошив
+								</span>
+							</div>
+							<div class="right-about__column">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+										<path d="M24.9847 2.98645C24.7199 2.99059 24.4675 3.09965 24.2829 3.28969C24.0983 3.47974 23.9967 3.73524 24.0004 4.00012V10.0001C23.9985 10.1326 24.023 10.2642 24.0724 10.3872C24.1218 10.5101 24.1952 10.6221 24.2882 10.7164C24.3812 10.8108 24.4921 10.8857 24.6144 10.9369C24.7366 10.988 24.8678 11.0144 25.0004 11.0144C25.1329 11.0144 25.2641 10.988 25.3863 10.9369C25.5086 10.8857 25.6195 10.8108 25.7125 10.7164C25.8056 10.6221 25.8789 10.5101 25.9283 10.3872C25.9778 10.2642 26.0022 10.1326 26.0004 10.0001V4.00012C26.0022 3.86633 25.9772 3.73354 25.9267 3.6096C25.8763 3.48566 25.8016 3.37309 25.7069 3.27857C25.6121 3.18405 25.4994 3.10949 25.3754 3.05932C25.2514 3.00914 25.1185 2.98436 24.9847 2.98645ZM3.97888 7.99036C3.771 7.99213 3.56883 8.05864 3.40051 8.18064C3.23218 8.30263 3.10605 8.47406 3.03967 8.67106C2.97328 8.86807 2.96994 9.08086 3.0301 9.27986C3.09027 9.47885 3.21095 9.65415 3.37536 9.78137L8.37536 13.7814C8.47795 13.8635 8.59572 13.9246 8.72193 13.9612C8.84814 13.9978 8.98032 14.0092 9.11093 13.9947C9.24153 13.9802 9.36801 13.9401 9.48312 13.8767C9.59824 13.8133 9.69974 13.7279 9.78183 13.6253C9.86392 13.5227 9.92499 13.4049 9.96156 13.2787C9.99812 13.1525 10.0095 13.0203 9.99493 12.8897C9.9804 12.7591 9.94029 12.6326 9.87687 12.5175C9.81346 12.4024 9.728 12.3009 9.62536 12.2189L4.62536 8.21887C4.44353 8.0689 4.21457 7.98797 3.97888 7.99036ZM45.9925 7.99231C45.7672 7.99612 45.5497 8.07595 45.3754 8.21887L40.3754 12.2189C40.2727 12.3009 40.1873 12.4024 40.1239 12.5175C40.0604 12.6326 40.0203 12.7591 40.0058 12.8897C39.9913 13.0203 40.0026 13.1525 40.0392 13.2787C40.0757 13.4049 40.1368 13.5227 40.2189 13.6253C40.301 13.7279 40.4025 13.8133 40.5176 13.8767C40.6327 13.9401 40.7592 13.9802 40.8898 13.9947C41.0204 14.0092 41.1526 13.9978 41.2788 13.9612C41.405 13.9246 41.5228 13.8635 41.6254 13.7814L46.6254 9.78137C46.791 9.6524 46.9119 9.47457 46.9708 9.27308C47.0298 9.07159 47.0238 8.85666 46.9538 8.65874C46.8838 8.46082 46.7533 8.28995 46.5808 8.17034C46.4082 8.05073 46.2024 7.98844 45.9925 7.99231ZM12.9711 15.9884C12.7952 15.9924 12.6235 16.0427 12.4733 16.1343C12.3231 16.2259 12.1997 16.3554 12.1156 16.5099L5.34607 25.2892C5.34411 25.2905 5.34216 25.2918 5.34021 25.2931C5.24124 25.3923 5.16424 25.5113 5.11421 25.6422C5.06417 25.7732 5.04222 25.9131 5.04977 26.0531C5.05732 26.1931 5.09421 26.3299 5.15804 26.4547C5.22187 26.5795 5.31121 26.6894 5.42028 26.7775L24.1136 46.5197C24.2046 46.6836 24.3398 46.8187 24.5038 46.9096C24.6679 47.0004 24.8541 47.0433 25.0414 47.0333C25.0427 47.0333 25.044 47.0333 25.0453 47.0333C25.0479 47.0333 25.0505 47.0333 25.0531 47.0333C25.2232 47.0264 25.3888 46.9761 25.5341 46.8872C25.6793 46.7983 25.7995 46.6738 25.8832 46.5255L44.6371 26.7833C44.7492 26.6941 44.8409 26.5819 44.9059 26.4542C44.971 26.3265 45.0078 26.1863 45.0139 26.0432C45.02 25.9 44.9953 25.7572 44.9414 25.6244C44.8875 25.4916 44.8057 25.372 44.7015 25.2736C44.7009 25.2729 44.7002 25.2723 44.6996 25.2716L37.8851 16.5079C37.7982 16.3492 37.6698 16.2171 37.5136 16.1256C37.3574 16.0341 37.1794 15.9867 36.9984 15.9884C36.9526 15.9892 36.9069 15.9931 36.8617 16.0001H25.1449C25.1351 15.9987 25.1254 15.9974 25.1156 15.9962C25.0825 15.992 25.0493 15.9893 25.016 15.9884C24.9591 15.9875 24.9023 15.9914 24.8461 16.0001H13.141C13.0848 15.9914 13.0279 15.9875 12.9711 15.9884ZM14.7015 18.0001H22.9554L18.141 24.1915L14.7015 18.0001ZM27.0433 18.0001H35.2992L31.8597 24.1915L27.0433 18.0001ZM25.0004 18.6271L29.9574 25.0001H20.0433L25.0004 18.6271ZM37.141 18.8087L41.9554 25.0001H33.7015L37.141 18.8087ZM12.8636 18.8165L16.2992 25.0001H8.09607L12.8636 18.8165ZM8.38513 27.0001H17.2914L22.5121 41.9161L8.38513 27.0001ZM19.4086 27.0001H30.5922L25.0004 42.9767L19.4086 27.0001ZM32.7093 27.0001H41.6703L27.4808 41.9376L32.7093 27.0001Z" fill="black" />
+									</svg>
+								</i>
+								<span>Ексклюзивні моделі,
+									які будуть тільки у тебе</span>
+							</div>
+							<div class="right-about__column">
+								<svg xmlns="http://www.w3.org/2000/svg" width="322" height="240" viewBox="0 0 322 240" fill="none">
+									<path d="M45.9571 123.619L45.278 123.437L13.4151 169.728L7.35431 113.275L0.651728 111.48L7.67336 176.903L14.3759 178.699L13.5274 170.665L45.9571 123.619Z" fill="#D4769A" />
+									<path d="M51.8711 125.204L35.9855 184.49L42.6881 186.286L58.5737 127L51.8711 125.204Z" fill="#D4769A" />
+									<path d="M110.176 140.827L109.497 140.645L81.253 174.107L71.2336 130.392L64.531 128.596L74.8388 172.933L69.3469 193.429L76.0495 195.225L81.5414 174.729L110.176 140.827Z" fill="#D4769A" />
+									<path d="M156.446 198.43C149.827 205.825 141.893 208.964 134.024 208.127C118.503 206.328 108.266 195.324 107.701 179.106C107.199 162.994 117.043 147.296 132.306 148.027C144.163 148.571 155.04 158.203 158.498 170.749L161.199 160.67C159.368 158.002 150.836 150.814 141.504 148.313C124.79 143.835 105.888 153.294 101.394 170.063C96.9237 186.748 107.801 204.186 124.599 208.687C139.616 212.711 149.826 207.187 156.949 198.929L156.446 198.43Z" fill="#D4769A" />
+									<path d="M211.384 167.945L204.985 191.828L175.459 183.917L181.859 160.034L175.156 158.238L159.271 217.524L165.973 219.32L175.3 184.511L204.826 192.422L195.499 227.231L202.201 229.027L218.087 169.741L211.384 167.945Z" fill="#D4769A" />
+									<path d="M271.28 183.994L260.75 223.292C258.186 232.863 249.394 240.22 238.732 238.271C226.158 235.991 221.215 225.589 224.96 211.614L234.968 174.264L228.265 172.468L218.257 209.818C214.127 225.233 222.872 235.019 235.513 238.406C247.476 241.612 258.167 235.309 261.344 223.452L271.874 184.153L271.28 183.994Z" fill="#D4769A" />
+									<path d="M302.463 255.892L309.59 257.802L297.62 212.202L321.222 198.102L320.289 197.852L279.776 222.127L288.74 188.672L282.037 186.877L266.152 246.162L272.854 247.958L279.549 222.973L291.791 215.633L302.463 255.892Z" fill="#D4769A" />
+									<path d="M264.723 164.256C264.723 164.256 251.896 168.775 252.939 171.498C253.48 172.908 266.563 168.857 266.563 168.857C266.958 168.616 267.587 167.717 266.951 166.049C266.314 164.381 265.2 164.159 264.723 164.256Z" fill="#D4769A" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M228.277 -91.1974C230.905 -90.5685 236.567 -86.2594 238.198 -74.0523C240.127 -59.6185 238.374 -49.4865 237.781 -46.0572C237.746 -45.8611 237.716 -45.6868 237.691 -45.535C237.221 -42.7284 231.487 -12.781 212.589 9.14457C211.234 10.5528 208.051 13.768 206.152 15.3679C203.777 17.368 202.965 20.691 204.417 24.2588C205.578 27.1133 206.761 29.324 207.209 30.073C213.253 40.2022 222.226 49.6516 232.703 54.2666C234.671 53.4 240.042 50.2789 245.786 44.7229C252.966 37.778 262.045 29.0254 280.332 23.0793C283.688 21.8886 291.824 20.3626 297.516 23.786C300.38 26.1915 304.369 33.1489 299.491 41.5446C292.874 52.9335 264.46 62.1079 250.342 60.5106C241.598 59.5219 239.246 58.649 237.555 59.3538C236.265 59.8923 235.36 61.3487 232.295 64.3734C226.776 69.8201 221.252 89.0248 218.698 98.5565L218.599 98.8791C217.199 103.433 214.147 113.367 212.235 116.017C211.313 115.41 209.284 111.593 206.896 105.419C203.826 97.4839 193.987 93.1624 188.153 91.7034C182.318 90.2449 170.594 88.097 160.61 92.5841C159.117 93.6152 155.899 95.8304 154.971 96.4407C154.809 96.5472 154.634 96.6682 154.444 96.7992C153.281 97.6021 151.597 98.7645 149.255 99.1422C148.926 96.5654 148.392 90.7657 148.768 88.2904C148.957 84.1217 149.395 78.2513 149.843 72.2453C150.461 63.938 151.099 55.3704 151.128 50.6832C151.171 43.7781 150.24 40.5799 149.627 38.4701C149.506 38.0551 149.397 37.6821 149.311 37.3312C144.659 35.9597 134.015 32.3949 128.662 29.1058C121.972 24.9942 110.388 13.1394 106.189 4.75938C105.876 4.13214 105.568 3.52782 105.271 2.94222C101.589 -4.30642 99.3406 -8.7328 103.014 -17.7828C106.632 -26.6977 113.383 -23.1556 115.765 -21.9056C115.997 -21.7842 116.188 -21.6844 116.33 -21.6198C117.933 -20.8911 131.505 -12.5422 144.364 8.25589C146.733 12.2025 152.239 22.6302 155.316 32.773C159.84 32.8456 170.23 32.6691 175.317 31.154C176.457 30.8145 177.565 30.5522 178.691 30.2862C183.838 29.0681 189.338 27.7671 199.889 18.578C198.814 10.3016 197.582 -7.73998 198.808 -14.2512C199.118 -15.896 199.365 -18.1868 199.672 -21.0215C200.963 -32.9732 203.298 -54.5823 215.726 -78.0607C217.922 -82.764 223.639 -91.9336 228.277 -91.1974ZM227.783 -88.4867C230.01 -84.677 234.141 -73.8681 232.851 -61.111C231.237 -45.1649 228.7 -33.824 223.887 -22.0406C223.444 -20.9558 223.007 -19.8708 222.57 -18.7842C218.259 -8.07009 213.866 2.84587 202.128 16.2984C202.103 10.7317 202.206 -1.04989 202.823 -3.64624C203.061 -4.64854 203.219 -6.15139 203.448 -8.32906C204.073 -14.283 205.228 -25.2843 210.002 -44.9107C214.169 -62.0404 218.879 -73.2464 222.35 -78.8151C223.877 -81.7799 227.101 -87.865 227.783 -88.4867ZM108.555 -17.2985C109.774 -17.4893 113.039 -17.6824 117.234 -15.2325C122.477 -12.1706 128.2 -6.64369 135.543 3.57096C142.886 13.7849 146.513 24.2898 148.847 32.4053C145.77 31.6813 138.547 29.2559 133.816 25.9941C128.44 22.2879 126.54 20.7548 117.782 10.6799C107.46 -1.19502 104.395 -10.0224 108.555 -17.2985ZM288.24 27.8093C292.624 28.0961 297.043 30.4396 297.99 31.3484C295.808 37.5267 291.384 44.6993 276.346 51.8978C273.624 53.2 262.036 57.8976 255.618 57.1893C255.016 57.1229 254.407 57.0541 253.791 56.9851L253.783 56.9837L253.772 56.9829C249.171 56.4637 244.206 55.9039 238.972 55.8939C245.052 50.0329 255.511 41.612 266.189 34.9652C278.746 27.1469 282.714 27.4242 287.512 27.7595L287.516 27.7597C287.629 27.7674 287.744 27.776 287.859 27.7833C287.986 27.7921 288.112 27.8009 288.24 27.8093ZM167.976 35.7719C177.04 33.9089 186.748 31.9133 190.991 28.7868C193.263 27.4951 198.33 24.0331 200.421 20.5185C202.086 24.9214 206.672 35.1308 211.707 40.751C218 47.7751 221.268 50.8761 231.361 55.914C229.452 59.5763 225.468 67.1311 224.809 68.0523C224.15 68.9735 221.642 74.2708 220.471 76.804C218.142 81.7824 213.313 93.6345 212.637 101.216C211.914 101.621 210.069 102.145 208.469 100.998C207.28 100.145 206.328 98.9144 205.549 97.9069C205.018 97.2206 204.567 96.6363 204.176 96.3473C203.21 95.6336 197.413 91.4898 188.408 89.1119C179.403 86.7341 170.207 86.5106 164.404 87.2305C158.601 87.9504 156.367 89.4949 152.777 91.9849C154.198 84.7368 157.022 69.0762 156.952 64.4226C156.923 62.5144 157.027 61.1195 157.153 59.4202C157.411 55.941 157.765 51.188 157.268 38.1438C160.412 37.3264 164.137 36.5608 167.976 35.7719Z" fill="#D4769A" />
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.about -->
+			<section class="insta-section section-margin-b-sm">
+
+				<div class="insta-section__content">
+					<div class="insta-section__header">
+						<h2 class="h1 insta-section__title">
+							Стежте за нами в Instagram
+						</h2>
+						<div class="insta-section__link">
+							<a href="#">
+								@viychuk_lingerie
+							</a>
+						</div>
+					</div>
+
+					<div class="scroller" data-direction="left" data-speed="fast">
+						<div class="scroller__inner">
+							<img src="img/insta/01.webp" alt="Insta image 01"><img src="img/insta/02.webp" alt="Insta image 02"><img src="img/insta/03.webp" alt="Insta image 03"><img src="img/insta/04.webp" alt="Insta image 04"><img src="img/insta/05.webp" alt="Insta image 05"><img src="img/insta/06.webp" alt="Insta image 06"><img src="img/insta/07.webp" alt="Insta image 07">
+						</div>
+					</div>
+
+				</div>
+
+			</section>
+			<!-- /.insta-section -->
+			<section class="support section-margin-b-sm">
+				<div class="support__container">
+					<div class="support__content">
+						<div class="support__column column-left">
+							<div class="column-left__body">
+								<div class="column-left__image-girls">
+									<img src="img/support/girls.webp" alt="Image">
+								</div>
+								<h2 class="h1 column-left__title mb-4">
+									Залишились питання?
+								</h2>
+								<ul>
+
+									<li>Ми на зв’язку</li>
+									<li>По будням з 9:00 до 22:00</li>
+									<li>Сб та Нд з 11:00 до 20:00</li>
+								</ul>
+							</div>
+						</div>
+						<div class="support__column column-right">
+							<div class="column-right__socials socials-block">
+								<ul>
+									<li>
+										<a href="#" class="socials-block__link _icon-inst">
+											<span>Написати в Instagram</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="socials-block__link _icon-viber">
+											<span>Написати в Viber</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="socials-block__link _icon-whatsapp">
+											<span>Написати в WhatsApp</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="socials-block__link _icon-tg">
+											<span>Написати в Telegram</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.support -->
+		</main>
 		<footer class="footer">
 			<div class="footer__container">
 				<div class="footer__content">
