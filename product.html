@@ -10,11 +10,11 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240728064752">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240728193005">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com?_v=20240728064752"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20240728193005"></script>
 </head>
 
 <body>
@@ -1042,7 +1042,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1093,7 +1093,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia Amelia Amelia Amelia AmeliaAmelia Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1144,7 +1144,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1195,7 +1195,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia Amelia Amelia Amelia AmeliaAmelia Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1246,7 +1246,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1297,7 +1297,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia Amelia Amelia Amelia AmeliaAmelia Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1348,7 +1348,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -1399,7 +1399,7 @@
 													</div>
 												</div>
 												<div class="product-card__content">
-													<div class="flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
+													<div class="product-card__content-top flex items-center gap-2 sm:flex-nowrap flex-wrap justify-between mb-2">
 														<a href="#" class="product-card__title"> Amelia Amelia Amelia Amelia AmeliaAmelia Amelia</a>
 														<div class="product-card__price price-box price-box-md">
 															<div class="price-new">
@@ -2013,14 +2013,14 @@
 		</div>
 	</div>
 </div> -->
-
+		<div class="offcanvas-backdrop"></div>
 		<div class="offcanvas offcanvas-md filter-more" id="filterMore">
 			<div class="offcanvas-wrapper">
 				<div class="offcanvas-header mb-3">
 					<div class="flex items-center gap-2 justify-between flex-wrap">
 						<h5 class="offcanvas-title h3">Фiльтри</h5>
 						<a href="#" class="filter-more-throw-off link-sm link-secondary">
-							Скинувши
+							Скинути
 						</a>
 					</div>
 					<button type="button" class="btn-close" data-close aria-label="Close">
@@ -2416,10 +2416,10 @@
 			</div>
 		</div>
 
-		<div class="offcanvas offcanvas-lg offcanvas-cart" id="cartUser">
+		<div class="offcanvas offcanvas-md offcanvas-cart offcanvas-action" id="cartUser">
 
 			<div class="offcanvas-wrapper">
-				<div class="offcanvas-header !p-0">
+				<div class="offcanvas-header">
 					<button type="button" class="btn-close" data-close aria-label="Close">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
 							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
@@ -2429,21 +2429,433 @@
 					</button>
 				</div>
 				<div class="offcanvas-body">
-					<div class="offcanvas-cart-content show">
-						<div class="offcanvas-auth__header">
+					<div class="offcanvas-action__nav action-nav">
+						<ul>
+							<li>
+								<a href="#" class="action-nav__link action-nav__link--cart active" data-toggle="offcanvas" data-offcanvas-target="#cartUser">
+									Кошик: 2
+								</a>
+							</li>
+							<li>
+								<a href="#" class="action-nav__link action-nav__link--favorite" data-toggle="offcanvas" data-offcanvas-target="#favoriteUser">
+									Обране: 7
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flex flex-col justify-between gap-5 flex-1">
+						<div class="offcanvas-action__list cart-list">
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price">
+														1699 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price">
+														1699 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price">
+														1699 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+							<div class="cart-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<ul class="line-product__sizes">
+											<li>
+												Розмір бра: <span>S</span>
+											</li>
+											<li>
+												Розмір трусиків: <span>M</span>
+											</li>
+										</ul>
+
+										<div class="line-product__price">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+												<div data-quantity="" class="quantity">
+													<button data-quantity-minus="" type="button" class="quantity__button quantity__button--minus"></button>
+													<div class="quantity__input">
+														<input data-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button data-quantity-plus="" type="button" class="quantity__button quantity__button--plus"></button>
+												</div>
+												<div class="product-card__price price-box price-box-md">
+													<div class="price">
+														1699 грн
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<button type="button" class="line-product-delete">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+										<path d="M6.49609 1C5.67528 1 5 1.67528 5 2.49609V3H2V4H3V12.5C3 13.3225 3.67747 14 4.5 14H10.5C11.3225 14 12 13.3225 12 12.5V4H13V3H10V2.49609C10 1.67528 9.32472 1 8.50391 1H6.49609ZM6.49609 2H8.50391C8.78509 2 9 2.21491 9 2.49609V3H6V2.49609C6 2.21491 6.21491 2 6.49609 2ZM4 4H5H6H9H10H11V12.5C11 12.7815 10.7815 13 10.5 13H4.5C4.21853 13 4 12.7815 4 12.5V4ZM5 5V12H6V5H5ZM7 5V12H8V5H7ZM9 5V12H10V5H9Z" fill="#939393" />
+									</svg>
+								</button>
+							</div>
+
+						</div>
+						<div class="offcanvas-action__widget">
+							<div class="row-promo">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+										<path d="M8.875 0.247559C8.0182 0.247559 7.29551 0.838365 7.07568 1.62939C6.85901 1.55245 6.6281 1.49756 6.375 1.49756C5.34684 1.49756 4.5 2.34439 4.5 3.37256C4.5 3.59472 4.54101 3.80616 4.6123 3.99756H2.625C1.66703 3.99756 0.75 4.64036 0.75 5.61377V14.8838C0.75 15.8575 1.6684 16.4983 2.625 16.5H15.125C16.083 16.5 17 15.8572 17 14.8838V5.61377C17 4.64009 16.0822 3.99756 15.125 3.99756H13.1377C13.209 3.80616 13.25 3.59472 13.25 3.37256C13.25 2.34439 12.4032 1.49756 11.375 1.49756C11.1213 1.49756 10.8913 1.55422 10.6743 1.63184C10.4553 0.839671 9.73262 0.247559 8.875 0.247559ZM8.875 1.49756C9.22684 1.49756 9.5 1.77072 9.5 2.12256C9.5 2.10635 9.46063 2.3219 9.3584 2.55469C9.25616 2.78747 9.10945 3.06183 8.96045 3.31885C8.91832 3.39152 8.91638 3.38457 8.875 3.45312C8.83362 3.38457 8.83168 3.39152 8.78955 3.31885C8.64055 3.06183 8.49384 2.78747 8.3916 2.55469C8.28937 2.3219 8.25 2.10635 8.25 2.12256C8.25 1.77072 8.52316 1.49756 8.875 1.49756ZM6.375 2.74756C6.60662 2.74756 6.8432 2.85513 7.08057 3.04541C7.14615 3.09821 7.22172 3.13724 7.30273 3.16016C7.42605 3.42691 7.56585 3.69685 7.71045 3.94629C7.72661 3.97417 7.72609 3.97019 7.74219 3.99756H6.79004C6.79004 3.99756 6.46552 3.99095 6.17725 3.88281C6.03311 3.82875 5.91713 3.75286 5.85254 3.68018C5.78795 3.60749 5.75 3.5462 5.75 3.37256C5.75 3.02072 6.02316 2.74756 6.375 2.74756ZM11.375 2.74756C11.7268 2.74756 12 3.02072 12 3.37256C12 3.5462 11.9621 3.60749 11.8975 3.68018C11.8329 3.75286 11.7169 3.82875 11.5728 3.88281C11.2845 3.99094 10.96 3.99756 10.96 3.99756H10.0078C10.0239 3.97019 10.0234 3.97417 10.0396 3.94629C10.1765 3.71008 10.3063 3.45434 10.4253 3.20166C10.5023 3.17261 10.5728 3.12864 10.6328 3.07227C10.8813 2.8647 11.1315 2.74756 11.375 2.74756ZM2.625 5.24756H8.83105C8.86275 5.24998 8.89458 5.24998 8.92627 5.24756H15.125C15.5478 5.24756 15.75 5.49245 15.75 5.61377V6.5H2V5.61377C2 5.49467 2.20297 5.24756 2.625 5.24756ZM2 7.75H15.75V14.8838C15.75 15.0029 15.547 15.25 15.125 15.25H2.625C2.2016 15.2492 2 15.0051 2 14.8838V7.75ZM7.05371 9C6.11746 9 5.75 9.60623 5.75 10.355C5.75 11.8812 8.875 14 8.875 14C8.875 14 12 11.9162 12 10.355C12 9.60623 11.6325 9 10.6963 9C9.44879 9 8.875 10.135 8.875 10.665C8.875 10.135 8.27621 9 7.05371 9Z" fill="#C53F55"></path>
+									</svg>
+								</i>
+								<p>
+									Преміальне пакування у подарунок!
+								</p>
+							</div>
+							<div class="row mt-2">
+								<p>Разом: 44343298 грн</p>
+								<a href="#" class="button button-md flex-1 button-black">
+									Оформити замовлення
+								</a>
+							</div>
 
 
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 
-		<div class="offcanvas offcanvas-lg offcanvas-cart" id="favoriteUser">
+		<div class="offcanvas offcanvas-md offcanvas-favorite offcanvas-action" id="favoriteUser">
 
 			<div class="offcanvas-wrapper">
-				<div class="offcanvas-header !p-0">
+				<div class="offcanvas-header">
 					<button type="button" class="btn-close" data-close aria-label="Close">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
 							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
@@ -2453,13 +2865,98 @@
 					</button>
 				</div>
 				<div class="offcanvas-body">
-					<div class="offcanvas-cart-content show">
-						<div class="offcanvas-auth__header">
+					<div class="offcanvas-action__nav action-nav">
+						<ul>
+							<li>
+								<a href="#" class="action-nav__link action-nav__link--cart" data-toggle="offcanvas" data-offcanvas-target="#cartUser">
+									Кошик: 2
+								</a>
+							</li>
+							<li>
+								<a href="#" class="action-nav__link action-nav__link--favorite active" data-toggle="offcanvas" data-offcanvas-target="#favoriteUser">
+									Обране: 7
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="flex flex-col justify-between gap-5 flex-1">
+						<div class="offcanvas-action__list favorite-list">
+							<div class="favorite-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<div class="line-product__price flex items-center gap-2 justify-between flex-wrap">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+												<button type="button" class="line-product__add-to-cart">
+
+												</button>
+											</div>
+											<button type="button" class="line-product-unfavorite">
+
+											</button>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+							<div class="favorite-list__line line-product">
+								<div class="line-product__body">
+									<a href="#" class="line-product__previews">
+										<img src="img/previews/01.webp" alt="Image">
+									</a>
+									<div class="line-product__content">
+										<a href="#" class="line-product__link">Комплект Amelia Комплект AmeliaКомплект Amelia Комплект Amelia</a>
+										<ul class="line-product__characteristics">
+											<li>
+												Колір: беж 007
+											</li>
+										</ul>
+										<div class="line-product__price flex items-center gap-2 justify-between flex-wrap">
+											<div class="flex items-center md:!gap-5 gap-2 flex-wrap sm:!flex-row flex-col">
+
+												<div class="product-card__price price-box price-box-md">
+													<div class="price-new">
+														1699 грн
+													</div>
+													<div class="price-old">
+														1999 грн
+													</div>
+												</div>
+												<button type="button" class="line-product__add-to-cart">
+
+												</button>
+											</div>
+											<button type="button" class="line-product-unfavorite">
+
+											</button>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
 
 
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -2592,7 +3089,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240728064752"></script>
+	<script src="js/app.min.js?_v=20240728193005"></script>
 </body>
 
 </html>

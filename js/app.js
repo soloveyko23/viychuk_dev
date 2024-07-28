@@ -7087,7 +7087,7 @@
                 },
                 on: {}
             });
-            new swiper_core_Swiper(".reviewed-products-adds__slider", {
+            if (window.matchMedia("(min-width: 479.98px)").matches) new swiper_core_Swiper(".reviewed-products-adds__slider", {
                 modules: [ Navigation, Autoplay, Scrollbar ],
                 observer: true,
                 observeParents: true,
@@ -7135,10 +7135,10 @@
                 },
                 breakpoints: {
                     320: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.2,
                         spaceBetween: 4
                     },
-                    500: {
+                    480: {
                         slidesPerView: 2,
                         spaceBetween: 6
                     },
@@ -7320,7 +7320,6 @@
     da.init();
     const initToggles = () => {
         const toggles = document.querySelectorAll("[data-toggle]");
-        if (!toggles.length) return;
         toggles.forEach((toggle => {
             const toggleType = toggle.getAttribute("data-toggle");
             if (toggleType === "dropdown") initDropdown(toggle); else if (toggleType === "offcanvas") initOffcanvas(toggle);
@@ -7356,37 +7355,46 @@
     const initOffcanvas = toggleButton => {
         const targetId = toggleButton.getAttribute("data-offcanvas-target");
         const offcanvasWrap = document.querySelector(targetId);
-        const offcanvas = offcanvasWrap.querySelector(".offcanvas-wrapper");
-        if (!offcanvas) {
-            console.warn("Offcanvas target not found");
+        const offcanvas = offcanvasWrap?.querySelector(".offcanvas-wrapper");
+        const backdrop = document.querySelector(".offcanvas-backdrop");
+        if (!offcanvas || !backdrop) {
+            console.warn("Offcanvas target or backdrop not found");
             return;
         }
-        const toggleOffcanvas = event => {
-            event.preventDefault();
-            const isExpanded = offcanvasWrap.classList.contains("show");
-            document.documentElement.classList.toggle("offcanvas-show", !isExpanded);
-            document.documentElement.classList.toggle("lock", !isExpanded);
-            document.documentElement.classList.remove("menu-open", !isExpanded);
-            offcanvasWrap.classList.toggle("show", !isExpanded);
-            toggleButton.classList.toggle("active", !isExpanded);
-            if (!isExpanded) document.addEventListener("click", handleOutsideClick); else document.removeEventListener("click", handleOutsideClick);
-        };
-        const closeOffcanvas = () => {
-            offcanvasWrap.classList.remove("show");
+        const closeAllOffcanvases = () => {
+            document.querySelectorAll(".offcanvas-wrapper").forEach((wrapper => {
+                wrapper.parentElement.classList.remove("show");
+            }));
             document.documentElement.classList.remove("offcanvas-show");
             document.documentElement.classList.remove("lock");
-            toggleButton.classList.remove("active");
-            document.removeEventListener("click", handleOutsideClick);
         };
-        const handleOutsideClick = event => {
-            if (!offcanvas.contains(event.target) && !toggleButton.contains(event.target)) closeOffcanvas();
+        const toggleOffcanvas = event => {
+            event.preventDefault();
+            event.stopPropagation();
+            const isExpanded = offcanvasWrap.classList.contains("show");
+            if (isExpanded) closeAllOffcanvases(); else {
+                closeAllOffcanvases();
+                offcanvasWrap.classList.add("show");
+                document.documentElement.classList.add("offcanvas-show");
+                document.documentElement.classList.add("lock");
+            }
         };
+        const handleBackdropClick = event => {
+            if (event.target === backdrop) closeAllOffcanvases();
+        };
+        backdrop.addEventListener("click", handleBackdropClick);
         const closeButtons = offcanvas.querySelectorAll("[data-close]");
         closeButtons.forEach((button => {
-            button.addEventListener("click", closeOffcanvas);
+            button.addEventListener("click", (event => {
+                event.stopPropagation();
+                closeAllOffcanvases();
+            }));
         }));
         toggleButton.addEventListener("click", toggleOffcanvas);
     };
+    document.addEventListener("DOMContentLoaded", (() => {
+        initToggles();
+    }));
     const toggleAuthForms = () => {
         const buttonLogin = document.querySelector(".button-auth-login");
         const buttonReg = document.querySelector(".button-auth-register");
@@ -7504,7 +7512,7 @@
     const isTouchDevice = () => window.matchMedia("(pointer: coarse)").matches;
     const addEventListenersToMenuItems = items => {
         items.forEach((menuItem => {
-            const arrow = menuItem.querySelector("a .arrow");
+            const arrow = menuItem.querySelector("a");
             const backButton = menuItem.querySelector(".menu-item-has-children-back");
             if (!isTouchDevice()) {
                 menuItem.addEventListener("mouseover", (() => {
@@ -7571,7 +7579,6 @@
         toggleAuthForms();
         initButtonToTop();
         initSearchBlock();
-        initToggles();
         initCheckboxSync();
         promoBlockInForm();
         presentBlockInForm();
