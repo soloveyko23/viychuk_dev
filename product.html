@@ -10,11 +10,11 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20240727204442">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240728064752">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="https://cdn.tailwindcss.com?_v=20240727204442"></script>
+	<script src="https://cdn.tailwindcss.com?_v=20240728064752"></script>
 </head>
 
 <body>
@@ -123,7 +123,7 @@
 
 										</li>
 										<li>
-											<a href="#" class="top-header__actions-link top-header__actions-link--favorite">
+											<a href="#" class="top-header__actions-link top-header__actions-link--favorite" data-toggle="offcanvas" data-offcanvas-target="#favoriteUser">
 												<i class="_icon-favorite">
 
 												</i>
@@ -131,7 +131,7 @@
 
 										</li>
 										<li>
-											<a href="#" class="top-header__actions-link top-header__actions-link--cart">
+											<a href="#" class="top-header__actions-link top-header__actions-link--cart" data-toggle="offcanvas" data-offcanvas-target="#cartUser">
 
 												<div class="inline-flex relative">
 													<i class="_icon-cart">
@@ -2278,6 +2278,15 @@
 		<div class="offcanvas offcanvas-lg offcanvas-auth" id="authUser">
 
 			<div class="offcanvas-wrapper">
+				<div class="offcanvas-header !p-0">
+					<button type="button" class="btn-close" data-close aria-label="Close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#DDDDDD" />
+							<path d="M18.75 18.043L18.043 18.75L18.3984 19.1016L23.293 24L18.043 29.25L18.75 29.957L24 24.707L28.8945 29.6055L29.25 29.957L29.957 29.25L29.6055 28.8945L24.707 24L29.957 18.75L29.25 18.043L24 23.293L19.1016 18.3984L18.75 18.043Z" fill="black" />
+						</svg>
+					</button>
+				</div>
 				<div class="offcanvas-body">
 					<div class="offcanvas-auth--login show">
 						<div class="offcanvas-auth__header">
@@ -2291,6 +2300,7 @@
 									</p>
 								</div>
 							</div>
+
 						</div>
 						<div class="offcanvas-auth__row">
 							<form action="files/sendmail/sendmail.php" class="offcanvas-auth__form form" method="POST">
@@ -2405,6 +2415,55 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="offcanvas offcanvas-lg offcanvas-cart" id="cartUser">
+
+			<div class="offcanvas-wrapper">
+				<div class="offcanvas-header !p-0">
+					<button type="button" class="btn-close" data-close aria-label="Close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#DDDDDD" />
+							<path d="M18.75 18.043L18.043 18.75L18.3984 19.1016L23.293 24L18.043 29.25L18.75 29.957L24 24.707L28.8945 29.6055L29.25 29.957L29.957 29.25L29.6055 28.8945L24.707 24L29.957 18.75L29.25 18.043L24 23.293L19.1016 18.3984L18.75 18.043Z" fill="black" />
+						</svg>
+					</button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="offcanvas-cart-content show">
+						<div class="offcanvas-auth__header">
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="offcanvas offcanvas-lg offcanvas-cart" id="favoriteUser">
+
+			<div class="offcanvas-wrapper">
+				<div class="offcanvas-header !p-0">
+					<button type="button" class="btn-close" data-close aria-label="Close">
+						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" fill="white" />
+							<rect x="0.5" y="0.5" width="47" height="47" rx="23.5" stroke="#DDDDDD" />
+							<path d="M18.75 18.043L18.043 18.75L18.3984 19.1016L23.293 24L18.043 29.25L18.75 29.957L24 24.707L28.8945 29.6055L29.25 29.957L29.957 29.25L29.6055 28.8945L24.707 24L29.957 18.75L29.25 18.043L24 23.293L19.1016 18.3984L18.75 18.043Z" fill="black" />
+						</svg>
+					</button>
+				</div>
+				<div class="offcanvas-body">
+					<div class="offcanvas-cart-content show">
+						<div class="offcanvas-auth__header">
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 
 		<div class="offcanvas offcanvas-lg offcanvas-table-sizes" id="tableSizes">
 
@@ -2533,7 +2592,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240727204442"></script>
+	<script src="js/app.min.js?_v=20240728064752"></script>
 </body>
 
 </html>

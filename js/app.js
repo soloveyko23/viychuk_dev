@@ -6994,35 +6994,37 @@
                 },
                 on: {}
             });
-            new swiper_core_Swiper(".bestsellers__slider", {
-                modules: [ Navigation, Autoplay, Scrollbar ],
-                observer: true,
-                observeParents: true,
-                speed: 800,
-                autoplay: {
-                    delay: 5e3,
-                    disableOnInteraction: false
-                },
-                scrollbar: {
-                    el: ".swiper-scrollbar",
-                    draggable: true
-                },
-                breakpoints: {
-                    320: {
-                        slidesPerView: 2,
-                        spaceBetween: 6
+            document.querySelectorAll(".bestsellers-tabs__body").forEach(((tabBody, index) => {
+                const slider = tabBody.querySelector(".bestsellers__slider");
+                if (slider) new swiper_core_Swiper(slider, {
+                    modules: [ Navigation, Autoplay, Scrollbar ],
+                    observer: true,
+                    observeParents: true,
+                    speed: 800,
+                    autoplay: {
+                        delay: 5e3,
+                        disableOnInteraction: false
                     },
-                    500: {
-                        slidesPerView: 3,
-                        spaceBetween: 12
+                    scrollbar: {
+                        el: ".swiper-scrollbar",
+                        draggable: true
                     },
-                    992: {
-                        slidesPerView: 5.1,
-                        spaceBetween: 12
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 2,
+                            spaceBetween: 6
+                        },
+                        500: {
+                            slidesPerView: 3,
+                            spaceBetween: 12
+                        },
+                        992: {
+                            slidesPerView: 5.1,
+                            spaceBetween: 12
+                        }
                     }
-                },
-                on: {}
-            });
+                });
+            }));
             new swiper_core_Swiper(".new-arrivals__slider", {
                 modules: [ Navigation, Autoplay, Scrollbar ],
                 observer: true,
@@ -7355,31 +7357,29 @@
         const targetId = toggleButton.getAttribute("data-offcanvas-target");
         const offcanvasWrap = document.querySelector(targetId);
         const offcanvas = offcanvasWrap.querySelector(".offcanvas-wrapper");
-        console.log(offcanvas);
         if (!offcanvas) {
             console.warn("Offcanvas target not found");
             return;
         }
         const toggleOffcanvas = event => {
             event.preventDefault();
-            const isExpanded = offcanvas.classList.contains("show");
+            const isExpanded = offcanvasWrap.classList.contains("show");
             document.documentElement.classList.toggle("offcanvas-show", !isExpanded);
             document.documentElement.classList.toggle("lock", !isExpanded);
             document.documentElement.classList.remove("menu-open", !isExpanded);
             offcanvasWrap.classList.toggle("show", !isExpanded);
             toggleButton.classList.toggle("active", !isExpanded);
-            if (!isExpanded) {
-                const handleOutsideClick = event => {
-                    if (!offcanvas.contains(event.target) && !toggleButton.contains(event.target)) closeOffcanvas();
-                };
-                document.addEventListener("click", handleOutsideClick);
-            }
+            if (!isExpanded) document.addEventListener("click", handleOutsideClick); else document.removeEventListener("click", handleOutsideClick);
         };
         const closeOffcanvas = () => {
             offcanvasWrap.classList.remove("show");
             document.documentElement.classList.remove("offcanvas-show");
             document.documentElement.classList.remove("lock");
             toggleButton.classList.remove("active");
+            document.removeEventListener("click", handleOutsideClick);
+        };
+        const handleOutsideClick = event => {
+            if (!offcanvas.contains(event.target) && !toggleButton.contains(event.target)) closeOffcanvas();
         };
         const closeButtons = offcanvas.querySelectorAll("[data-close]");
         closeButtons.forEach((button => {
@@ -7576,7 +7576,7 @@
         promoBlockInForm();
         presentBlockInForm();
     }));
-    window["FLS"] = true;
+    window["FLS"] = false;
     addLoadedClass();
     menuInit();
     spollers();
