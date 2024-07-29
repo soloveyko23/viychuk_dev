@@ -2022,6 +2022,21 @@ select option[selected] {
   gap: 2rem;
   font-size: .9375rem
 }
+.offcanvas-action__list.cart-list {
+  max-height: 620px;
+  overflow: auto
+}
+.offcanvas-action__list.cart-list::-webkit-scrollbar {
+  width: 2px
+}
+.offcanvas-action__list.cart-list::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: .375rem
+}
+.offcanvas-action__list.cart-list::-webkit-scrollbar-thumb {
+  background: var(--main-black);
+  border-radius: .375rem
+}
 .offcanvas-action__list .cart-list__line {
   margin-bottom: .75rem;
   position: relative
@@ -2208,7 +2223,11 @@ select option[selected] {
   background-color: #f0dde0;
   border-radius: .375rem;
   padding: .625rem;
-  z-index: 3
+  z-index: 3;
+  position: sticky;
+  bottom: 1rem;
+  left: 0;
+  right: 0
 }
 .offcanvas-action__widget .row {
   display: flex;
@@ -3100,6 +3119,13 @@ select option[selected] {
   background: var(--clr-primary-400);
   border-radius: .5rem;
   box-shadow: 0 .5rem 1rem -.25rem var(--clr-primary-900)
+}
+.lg-outer .lg-content {
+  top: 0!important;
+  bottom: 0!important
+}
+.lg-sub-html {
+  display: none!important
 }
 .header:not(.header--no-fixed) {
   position: absolute;
@@ -5056,6 +5082,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .offcanvas-table-sizes__header {
     margin-bottom: 1.25rem
   }
+  .offcanvas-action__list.cart-list {
+    margin-right: -2.5rem;
+    padding-right: 2.5rem
+  }
   .offcanvas-action__list .cart-list__line .line-product-delete {
     bottom: .875rem
   }
@@ -6296,6 +6326,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .offcanvas-action .offcanvas-header {
     padding: 0
+  }
+  .offcanvas-action__list.cart-list {
+    padding-right: 1rem;
+    margin-right: -1rem
   }
   .offcanvas-action__list .cart-list__line .line-product-delete {
     bottom: 0
