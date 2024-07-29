@@ -608,12 +608,12 @@
 									</p>
 								</div>
 								<ul class="personal-area__list">
-									<li class="active">
+									<li>
 										<a href="#" class="_icon-cabinet">
 											<span>Особисті дані</span>
 										</a>
 									</li>
-									<li>
+									<li class="active">
 										<a href="#" class="_icon-order">
 											<span>Мої замовлення</span>
 										</a>
@@ -626,97 +626,72 @@
 								</ul>
 							</div>
 						</div>
-						<div class="cabinet-user__content content-cabinet">
-							<div class="content-cabinet__columns">
-								<div class="content-cabinet__column column column-main">
-									<div class="column__body">
-										<div class="column__header mb-5">
-											<h4 class="h4">Мої особисті дані</h4>
-										</div>
-										<div class="column__content">
-											<form action="files/sendmail/sendmail.php" class="form" method="POST">
-
-												<div class="form__row grid sm:grid-cols-2 grid-cols-1 gap-3 mb-3">
-													<div class="form__line">
-														<input autocomplete="off" type="text" name="form[]" placeholder="Ваше ім'я" class="input">
-													</div>
-													<div class="form__line">
-														<input autocomplete="off" type="text" name="form[]" placeholder="Ваше прізвище" class="input">
-													</div>
+						<div class="cabinet-user__content content-cabinet section-margin-b-sm">
+							<div class="content-cabinet__orders">
+								<div class="content-cabinet__orders-list orders-list">
+									<a href="#" class="orders-list__line line-order">
+										<div class="line-order__body">
+											<div class="line-order__action">
+												<div class="line-order__id">
+													#322337
 												</div>
-												<div class="form__row grid sm:grid-cols-2 grid-cols-1 gap-3 mb-3">
-													<div class="form__line">
-
-														<select name="form[]" data-class-modif="form" data-search>
-															<option value="1" selected>Ваша країна</option>
-															<option value="2">Пункт №2</option>
-															<option value="3">Пункт №3</option>
-															<option value="4">Пункт №4</option>
-														</select>
-													</div>
-													<div class="form__line">
-														<input autocomplete="off" type="text" name="form[]" placeholder="Ваше місто" class="input">
-													</div>
+												<div class="line-order__date">
+													21 травня 2024 17:10
 												</div>
-												<div class="form__row grid sm:grid-cols-2 grid-cols-1 gap-3 mb-3">
-													<div class="form__line">
-														<input autocomplete="off" type="text" name="form[]" placeholder="Пошта" class="input">
-													</div>
-													<div class="form__line">
-														<input autocomplete="off" type="text" name="form[]" placeholder="Телефон" class="input">
-													</div>
-												</div>
-												<div class="form__row">
-													<button type="submit" class="button button-md button-black w-full flex-1">Зберегти данні</button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-								<div class="content-cabinet__column-grid">
-									<div class="content-cabinet__column column column--bg">
-										<div class="column__body">
-											<div class="column__header mb-5">
-												<h4 class="h4">Змінити пароль</h4>
 											</div>
-											<div class="column__content">
-												<form action="files/sendmail/sendmail.php" class="form" method="POST">
+											<div class="line-order__sum">
+												4 товари на суму 5997 грн
+											</div>
+											<div class="line-order__status status-delivered">
+												Доставляється
+											</div>
+											<div class="line-order__arrow">
 
-													<div class="form__row flex flex-col gap-3 mb-3">
-														<div class="form__line">
-															<input autocomplete="off" type="text" name="form[]" placeholder="Пароль" class="input">
-														</div>
-														<div class="form__line">
-															<input autocomplete="off" type="text" name="form[]" placeholder="Повторіть пароль" class="input">
-														</div>
-													</div>
-													<div class="form__row">
-														<button type="submit" class="button button-md button-black w-full flex-1">Зберегти данні</button>
-													</div>
-												</form>
 											</div>
 										</div>
-									</div>
-									<div class="content-cabinet__column column column--bg">
-										<div class="column__body">
-											<div class="column__header mb-5">
-												<h4 class="h4">Адрес для доставки</h4>
+									</a>
+									<a href="#" class="orders-list__line line-order">
+										<div class="line-order__body">
+											<div class="line-order__action">
+												<div class="line-order__id">
+													#322337
+												</div>
+												<div class="line-order__date">
+													21 травня 2024 17:10
+												</div>
 											</div>
-											<div class="column__content">
-												<ul class="mb-3">
+											<div class="line-order__sum">
+												4 товари на суму 5997 грн
+											</div>
+											<div class="line-order__status status-done">
+												Виконано
+											</div>
+											<div class="line-order__arrow">
 
-
-
-													<li> Україна,Чернівці</li>
-													<li>вул. Маланчука</li>
-													<li>будинок 38</li>
-													<li>квартира 128</li>
-
-												</ul>
-												<a href="#" class="button button-md button-black w-full flex-1">Додати адресу доставки</a>
 											</div>
 										</div>
-									</div>
+									</a>
+									<a href="#" class="orders-list__line line-order">
+										<div class="line-order__body">
+											<div class="line-order__action">
+												<div class="line-order__id">
+													#322337
+												</div>
+												<div class="line-order__date">
+													21 травня 2024 17:10
+												</div>
+											</div>
+											<div class="line-order__sum">
+												4 товари на суму 5997 грн
+											</div>
+											<div class="line-order__status status-error">
+												Відмінено
+											</div>
+											<div class="line-order__arrow">
+
+											</div>
+										</div>
+									</a>
 								</div>
 							</div>
 						</div>
