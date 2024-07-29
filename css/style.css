@@ -2023,7 +2023,6 @@ select option[selected] {
   font-size: .9375rem
 }
 .offcanvas-action__list.cart-list {
-  max-height: 620px;
   overflow: auto
 }
 .offcanvas-action__list.cart-list::-webkit-scrollbar {
@@ -2223,11 +2222,7 @@ select option[selected] {
   background-color: #f0dde0;
   border-radius: .375rem;
   padding: .625rem;
-  z-index: 3;
-  position: sticky;
-  bottom: 1rem;
-  left: 0;
-  right: 0
+  z-index: 3
 }
 .offcanvas-action__widget .row {
   display: flex;
@@ -5210,6 +5205,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     min-height: 12.375rem;
     padding: 1.25rem
   }
+  .offcanvas-action__widget {
+    position: sticky;
+    bottom: 1rem;
+    left: 0;
+    right: 0
+  }
   .offcanvas-action__widget .row-alert {
     padding-left: 8.25rem
   }
@@ -5594,6 +5595,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 @media (min-width:90em) {
+  .offcanvas-action__list.cart-list {
+    max-height: calc(100vh - 290px)
+  }
   .header__top {
     border-bottom: 2px solid rgba(0,0,0,.1);
     padding-bottom: 1.25rem;
@@ -5655,6 +5659,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 @media (max-width:105em) {
+  .offcanvas-action__list.cart-list {
+    max-height: calc(100vh - 240px)
+  }
   .product-info__back-link {
     left: 1rem
   }
@@ -5879,6 +5886,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .offcanvas-auth__header {
     margin-bottom: .625rem
+  }
+  .offcanvas-action__list.cart-list {
+    max-height: calc(100vh - 270px)
   }
   .search-block-small-button {
     color: var(--main-black)
@@ -6136,6 +6146,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .offcanvas-table-sizes__header {
     padding: 1rem
+  }
+  .offcanvas-action__list.cart-list {
+    max-height: calc(100vh - 400px)
   }
   .offcanvas-action__list .cart-list__line .line-product__body {
     gap: .75rem
