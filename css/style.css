@@ -1884,7 +1884,7 @@ select option[selected] {
 }
 .offcanvas-auth__header {
   border-radius: .375rem;
-  background-color: var(--beige);
+  background-color: #fff;
   min-height: 12.375rem;
   display: flex;
   flex-direction: column;
@@ -3469,8 +3469,8 @@ select option[selected] {
   min-height: 4.25rem
 }
 .words .scroller {
-  -webkit-mask: none;
-  mask: none
+  -webkit-mask: none!important;
+  mask: none!important
 }
 .words .marquee-block {
   position: relative;
@@ -5927,6 +5927,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     transform: translateY(-100%)
   }
   .menu-open .header.header-white::before {
+    transition: all .5s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     background-color: #fff!important
   }
   .header.header-white._header-show::before {
